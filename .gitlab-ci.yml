@@ -1,0 +1,14 @@
+image: busybox:latest
+
+before_script:
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+   
+copy:
+  stage: build
+  script:
+    - git remote rm origin
+    - git remote add origin https://github.com/mipmartinkoehn/sd-landingpage.git
+    - git push origin master -f
