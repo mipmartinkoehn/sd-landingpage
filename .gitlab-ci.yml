@@ -1,24 +1,23 @@
-image: alpine:latest
-
-before_script:
-  - apk --update add openssh-client
-  - apk --update add bash git rsync
-  - eval $(ssh-agent -s)
-  - mkdir -p ~/.ssh
-  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-  - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-  - git config --global user.email "m.koehn@mip-consult.de"
-  - git config --global user.name "Martin Köhn"
+image: node:latest
   
 build:
-    image: node
     stage: build
     script: 
       - npm install
       - npm run build
    
 copy:
+  image: alpine
   stage: build
+  before_script:
+    - apk --update add openssh-client
+    - apk --update add bash git rsync
+    - eval $(ssh-agent -s)
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+    - git config --global user.email "m.koehn@mip-consult.de"
+    - git config --global user.name "Martin Köhn"
   script:
     - mkdir /newrepo
     - git clone git@github.com:mipmartinkoehn/sd-landingpage.git /newrepo
