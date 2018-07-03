@@ -2,9 +2,13 @@ import React from 'react';
 import Link, { withPrefix } from 'gatsby-link'
 
 class HeaderTitle extends React.Component {
+  constructor(props, location) {
+    super(props);
+    super(location);
+  }
   getPage() {
     let title = '';
-    switch (location.pathname) {
+    switch (this.props.location) {
       case withPrefix("/"):
         title = 'INDIVIDUALSOFTWARE: \nSMARTE KONZEPTE. \nZUVERLÄSSIGE UMSETZUNG!';
         break;
@@ -31,7 +35,6 @@ class HeaderTitle extends React.Component {
     };
 
   render() {
-    const isHomepage = location.pathname === withPrefix("/");
         return (
             <div
           style={{
@@ -40,7 +43,7 @@ class HeaderTitle extends React.Component {
             padding: '7.45rem 1.0875rem',
           }}
         >
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff'}}>
+        <div style={{textAlign: 'center', display: 'table-cell', verticalAlign: 'middle', color: '#fff'}}>
             <h1 style={{ margin: 0 }}>
               {this.getPage()}
             </h1>

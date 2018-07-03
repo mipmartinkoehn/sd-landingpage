@@ -6,7 +6,7 @@ import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import './index.css'
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data, location }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
@@ -15,7 +15,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header siteTitle={location.pathname} />
     <div>
       {children()}
     </div>

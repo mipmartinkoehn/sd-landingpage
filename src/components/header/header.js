@@ -13,7 +13,7 @@ class Header extends React.Component {
       <div className='header'>
           <Bubble></Bubble>
           <Navigation></Navigation>
-          <HeaderTitle></HeaderTitle>
+          <HeaderTitle location={siteTitle}></HeaderTitle>
       </div>
     )
   }

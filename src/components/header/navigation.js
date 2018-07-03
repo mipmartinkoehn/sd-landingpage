@@ -43,7 +43,7 @@ class Navigation extends React.Component {
 
 
         return (
-            <DynamicHeader hasEffect={true} effectDuration={600} useHeadersDifference={true}>
+            <DynamicHeader hasEffect={true} effectDuration={300} useHeadersDifference={false}>
                 <div style={{height: "100px", width: "100%", position: "fixed", top: 0, zIndex: 1039, textAlign: "center",}}>
                     <NavigationItems 
                         imgSrc={msLight}
