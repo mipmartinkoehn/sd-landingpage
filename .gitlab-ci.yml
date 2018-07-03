@@ -1,14 +1,22 @@
-image: busybox:latest
+image: alpine:latest
 
 before_script:
+  - apk --update add openssh-client
+  - apk --update add bash git rsync
   - eval $(ssh-agent -s)
-  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
   - mkdir -p ~/.ssh
-  - chmod 700 ~/.ssh
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+  - git config --global user.email "m.koehn@mip-consult.de"
+  - git config --global user.name "Martin Köhn"
    
 copy:
   stage: build
   script:
-    - git remote rm origin
-    - git remote add origin https://github.com/mipmartinkoehn/sd-landingpage.git
-    - git push origin master -f
+    - mkdir /newrepo
+    - git clone git@github.com:mipmartinkoehn/sd-landingpage.git /newrepo
+    - rsync -avz --delete --exclude=/.git/ "./" "/newrepo"
+    - cd /newrepo
+    - git add --all
+    - git commit -m"update from gitlab"
+    - git push origin --all
