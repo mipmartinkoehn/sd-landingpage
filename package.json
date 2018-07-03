@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "mip-sd-landingpage",
+  "description": "mip Software Development Landingpage",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Martin Köhn <m.koehn@mip-consult.de>",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
@@ -14,7 +14,8 @@
     "react-transition-group": "^2.4.0"
   },
   "keywords": [
-    "gatsby"
+    "mip",
+    "landingpage"
   ],
   "license": "MIT",
   "scripts": {
@@ -28,6 +29,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mipmartinkoehn/sd-landingpage"
   }
 }
