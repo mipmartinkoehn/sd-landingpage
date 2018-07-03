@@ -9,6 +9,13 @@ before_script:
   - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
   - git config --global user.email "m.koehn@mip-consult.de"
   - git config --global user.name "Martin Köhn"
+  
+build:
+    image: node
+    stage: build
+    script: 
+      - npm install
+      - npm run build
    
 copy:
   stage: build
