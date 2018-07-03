@@ -2,9 +2,8 @@ import React from 'react';
 import Link, { withPrefix } from 'gatsby-link'
 
 class HeaderTitle extends React.Component {
-  constructor(props, location) {
+  constructor(props) {
     super(props);
-    super(location);
   }
   getPage() {
     let title = '';
@@ -43,7 +42,13 @@ class HeaderTitle extends React.Component {
             padding: '7.45rem 1.0875rem',
           }}
         >
-        <div style={{textAlign: 'center', display: 'table-cell', verticalAlign: 'middle', color: '#fff'}}>
+        <div style={{textAlign: 'center',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      maxHeight: '500px',
+                      height: '100vh',
+                      color: '#fff'}}>
             <h1 style={{ margin: 0 }}>
               {this.getPage()}
             </h1>
