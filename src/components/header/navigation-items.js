@@ -14,13 +14,15 @@ class NavigationItems extends React.Component {
                     padding: '0px 1.0875rem 1.45rem',
                     paddingTop: 0,
                     }}>
-                    <img src={imgSrc} style={logoStyle}/>
+                    <Link to="/">
+                        <img src={imgSrc} style={logoStyle}/>
+                    </Link>
                     <ul style={ulStyle}>
-                        <li style={liStyle}><Link style={linkStyle} to="/page-2/">Kontakt</Link></li>
-                        <li style={liStyle}><Link style={linkStyle} to="/page-2/">Projekte</Link></li>
-                        <li style={liStyle}><Link style={linkStyle} to="/page-2/">Support und Schulungen</Link></li>
-                        <li style={liStyle}><Link style={linkStyle} to="/page-2/">IT-Beratung</Link></li>
-                        <li style={liStyle}><Link style={linkStyle} to="/page-2/">Softwareentwicklung</Link></li>
+                        <li style={liStyle}><Link activeClassName='active' style={linkStyle} to="/contact/">Kontakt</Link></li>
+                        <li style={liStyle}><Link activeClassName='active' style={linkStyle} to="/projects/">Projekte</Link></li>
+                        <li style={liStyle}><Link activeClassName='active' style={linkStyle} to="/support/">Support und Schulungen</Link></li>
+                        <li style={liStyle}><Link activeClassName='active' style={linkStyle} to="/it-consulting/">IT-Beratung</Link></li>
+                        <li style={liStyle}><Link activeClassName='active' style={linkStyle} to="/software-dev/">Softwareentwicklung</Link></li>
                     </ul>
                 </div>
             </div>
