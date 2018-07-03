@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
-import mipLogo from '../mip-logo_weiß.png';
+import mipLogo from '../../images/mip-logo_weiß.png';
 import './footer.css';
 
 class Footer extends Component {

@@ -2,8 +2,8 @@ import React from 'react';
 import DynamicHeader from './dynamic-header';
 
 
-import msLight from '../mip-software-logo_weiß.png';
-import msDark from '../mip-software-logo.png';
+import msLight from '../../images/mip-software-logo_weiß.png';
+import msDark from '../../images/mip-software-logo.png';
 import NavigationItems from './navigation-items';
 import './header.css';
 
