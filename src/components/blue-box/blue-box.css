@@ -1,0 +1,9 @@
+.blue-box {
+    background: url(../bubbles.png) left bottom;
+    background-color: #00567A;
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%!important;
+    color: #fff;
+}

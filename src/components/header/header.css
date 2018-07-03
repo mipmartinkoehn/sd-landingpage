@@ -1,0 +1,10 @@
+.header {
+    background: url(../bubbles.png) left bottom, linear-gradient(to right, #00567A, #482E7A ,#AC1332);
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-bottom: 1.45rem;
+    position: relative;
+    max-height: 900px;
+    overflow: hidden;
+
+}
