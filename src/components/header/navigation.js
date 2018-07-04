@@ -41,10 +41,32 @@ class Navigation extends React.Component {
             height: '40px'
         }
 
+        const lightStyle = {
+            height: "100px",
+            width: "100%",
+            position: "fixed",
+            top: 0,
+            zIndex: 1039,
+            textAlign: "center"
+        }
+
+        const darkStyle = {
+            height: "75px",
+            backgroundColor: "#fff",
+            width: "100%",
+            position: "fixed",
+            top: 0,
+            zIndex: 1039,
+            textAlign: "center",
+            WebkitBoxShadow: '1px 1px 5px 0px rgba(50, 50, 50, 0.75)',
+            MozBoxShadow: '1px 1px 5px 0px rgba(50, 50, 50, 0.75)',
+            BoxShadow: '1px 1px 5px 0px rgba(50, 50, 50, 0.75)'
+        }
+
 
         return (
-            <DynamicHeader hasEffect={true} effectDuration={300} useHeadersDifference={false}>
-                <div style={{height: "100px", width: "100%", position: "fixed", top: 0, zIndex: 1039, textAlign: "center",}}>
+            <DynamicHeader hasEffect={true} effectDuration={100} useHeadersDifference={true}>
+                <div style={lightStyle}>
                     <NavigationItems 
                         imgSrc={msLight}
                         logoStyle={logoStyleLight}
@@ -52,9 +74,7 @@ class Navigation extends React.Component {
                         liStyle={liStyle}
                         linkStyle={linkStyleLight}></NavigationItems>
                 </div>
-                <div style={{height: "75px", backgroundColor: "#fff", width: "100%", position: "fixed", top: 0, zIndex: 1039, textAlign: "center", WebkitBoxShadow: '1px 1px 5px 0px rgba(50, 50, 50, 0.75)',
-                MozBoxShadow: '1px 1px 5px 0px rgba(50, 50, 50, 0.75)',
-                BoxShadow: '1px 1px 5px 0px rgba(50, 50, 50, 0.75)'}}>
+                <div style={darkStyle}>
                 <NavigationItems 
                         imgSrc={msDark}
                         logoStyle={logoStyleDark}

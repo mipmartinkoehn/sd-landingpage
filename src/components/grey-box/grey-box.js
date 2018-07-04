@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
-import './grey-box.css';
 
 class Greybox extends Component {
     render() {
+        const greyBoxStyle = {
+            backgroundColor: '#F5F5F6',
+            padding: '4rem 0',
+            position: 'relative',
+            width: '100%!important'
+        }
+
+
         return (
-            <div className='grey-box'>
-                <div style={{
-                    margin: '0 auto',
-                    maxWidth: 960,
-                    padding: '0.5rem 1.0875rem 0.5rem',
-                    paddingTop: 0,
-                }}>
+            <div style={greyBoxStyle} >
+                <div className='center-mode'>
                     {this.props.children}
                 </div>
             </div>

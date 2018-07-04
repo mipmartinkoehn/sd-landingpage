@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import './blue-box.css';
+import Bubbles from '../../images/bubbles.png';
 
 class BlueBox extends Component {
     render() {
+        const blueBoxStyle = {
+            background: `url(${Bubbles}) left bottom`,
+            backgroundColor: '#00567A',
+            backgroundRepeat: 'no-repeat',
+            padding: '4rem 0',
+            position: 'relative',
+            width: '100%!important',
+            color: '#fff'
+        };
 
         return (
-            <div className='blue-box'>
-                <div style={{
-                    margin: '0 auto',
-                    maxWidth: 960,
-                    padding: '0.5rem 1.0875rem 0.5rem',
-                    paddingTop: 0,
-                }}>
+            <div style={blueBoxStyle}>
+                <div className='center-mode'>
                     {this.props.children}
                 </div>
             </div>

@@ -3,14 +3,10 @@ import React, { Component } from 'react';
 class Whitebox extends Component {
     render() {
         return (
-            <div
-                style={{
-                    margin: '0 auto',
-                    maxWidth: 960,
-                    padding: '1.0rem 1.0875rem 1.45rem'
-                }}
-                >
-                {this.props.children}
+            <div style={{padding: '4rem 0'}}>
+                <div className='center-mode' >
+                    {this.props.children}
+                </div>
             </div>
         )
     }

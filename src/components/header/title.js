@@ -34,27 +34,31 @@ class HeaderTitle extends React.Component {
     };
 
   render() {
-        return (
-            <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '7.45rem 1.0875rem',
-          }}
-        >
-        <div style={{textAlign: 'center',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      maxHeight: '500px',
-                      height: '100vh',
-                      color: '#fff'}}>
+    const centerStyle = {
+      margin: '0 auto',
+      maxWidth: 960,
+      padding: '7.45rem 1.0875rem',
+    };
+
+    const flexStyle = {
+      textAlign: 'center',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      maxHeight: '500px',
+      height: '100vh',
+      color: '#fff'
+    };
+
+    return (
+        <div style={centerStyle} >
+        <div style={flexStyle}>
             <h1 style={{ margin: 0 }}>
               {this.getPage()}
             </h1>
           </div>
         </div>
-        )
+    )
     }
 };
 

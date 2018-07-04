@@ -15,29 +15,29 @@ const Contact = () => (
         <h2>Schreiben Sie uns eine Nachricht</h2>
 
         <form method="post" action="#">
-        <p>
-        <label htmlFor="name">Name</label>
-        <input type="text" name="name" id="name"/>
-      </p>
-      <p>
-        <label htmlFor="email">Email</label>
-        <input type="text" name="email" id="email"/>
-      </p>
-      <p>
-        <label htmlFor="firm">Firma</label>
-        <input type="text" name="firm" id="firm"/>
-      </p>
-      <p>
-        <label htmlFor="phone">Telefon</label>
-        <input type="text" name="phone" id="phone"/>
-      </p>
-      <p className="full-width">
-        <label htmlFor="message">Ihre Nachricht an uns</label>
-        <textarea name="message" id="message" rows="12"></textarea>
-      </p>
-      <p className="full-width">
-        <input type="submit" value="Nachricht absenden" />
-      </p>
+          <p>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="name"/>
+          </p>
+          <p>
+            <label htmlFor="email">Email</label>
+            <input type="text" name="email" id="email"/>
+          </p>
+          <p>
+            <label htmlFor="firm">Firma</label>
+            <input type="text" name="firm" id="firm"/>
+          </p>
+          <p>
+            <label htmlFor="phone">Telefon</label>
+            <input type="text" name="phone" id="phone"/>
+          </p>
+          <p className="full-width">
+            <label htmlFor="message">Ihre Nachricht an uns</label>
+            <textarea name="message" id="message" rows="12"></textarea>
+          </p>
+          <p className="full-width">
+            <input type="submit" value="Nachricht absenden" />
+          </p>
         </form>
       </Whitebox>
       <Greybox>
