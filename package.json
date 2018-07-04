@@ -10,8 +10,7 @@
     "react": "^16.4.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0",
-    "react-transition-group": "^2.4.0"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "mip",
@@ -25,6 +24,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gatsby-plugin-no-sourcemaps": "^1.0.5",
     "prettier": "^1.12.0"
   },
   "repository": {
