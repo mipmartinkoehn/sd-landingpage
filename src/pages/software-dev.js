@@ -1,8 +1,12 @@
 import React from 'react'
 import Whitebox from '../components/white-box/white-box';
-import DevCicle from '../images/dev_cicle.png';
+import CodeWhite from '../images/code-icon_weiß.png';
+import RocketWhite from '../images/raketen-icon_weiß.png';
+import ConceptWhite from '../images/konzept-icon_weiß.png';
+import MagnifierWhite from '../images/lupe-icon_weiß.png';
 import Greybox from '../components/grey-box/grey-box';
 import BlueBox from '../components/blue-box/blue-box';
+import IconBall from '../components/icon-ball/icon-ball';
 
 const SoftwareDev = () => (
 <div>
@@ -12,16 +16,33 @@ const SoftwareDev = () => (
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis. Non enim praesent elementum facilisis leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Ultrices dui sapien eget mi proin. Nisl tincidunt eget nullam non nisi. Vulputate odio ut enim blandit volutpat. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan.  
     </p>
     <br />
-    <div>
-      <img src={DevCicle} style={{ 
-      display: 'block',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      }}/>
+    <div style={{textAlign: 'center'}}>
+      <div style={{display: 'inline-block'}}>
+        <IconBall bgColor='#13597C' color='#fff' imgSrc={ConceptWhite}>
+          Konzept
+        </IconBall>
+      </div>
     </div>
-
-    <br />
-    <br />
+    <div style={{textAlign: 'center'}}>
+      <div style={{display: 'inline-block'}}>
+        <IconBall bgColor='#13597C' color='#fff' imgSrc={RocketWhite}>
+          Veröffentlichen
+        </IconBall>
+      </div>
+      <div style={{display: 'inline-block', width: '12.5rem'}}></div>
+      <div style={{display: 'inline-block'}}>
+        <IconBall bgColor='#13597C' color='#fff' imgSrc={CodeWhite}>
+          Entwicklung
+        </IconBall>
+      </div>
+    </div>
+    <div style={{textAlign: 'center'}}>
+      <div style={{display: 'inline-block'}}>
+        <IconBall bgColor='#13597C' color='#fff' imgSrc={MagnifierWhite}>
+          Testen
+        </IconBall>
+      </div>
+    </div>
   </Whitebox>
   <Greybox>
   <h2>Web-Anwendungen</h2>
