@@ -27,7 +27,11 @@ class HeaderTitle extends React.Component {
         title = 'KONTAKT';
         break;
       default:
-        title = '404'
+        title = <section className="error-container">
+                  <span>4</span>
+                  <span><span className="screen-reader-text">0</span></span>
+                  <span>4</span>
+                </section>
         break;
       }
       return title;

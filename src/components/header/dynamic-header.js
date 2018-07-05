@@ -1,3 +1,4 @@
+// From thinhvo0108/react-sticky-dynamic-header
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 

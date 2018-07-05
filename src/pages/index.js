@@ -15,8 +15,11 @@ const IndexPage = () => (
 
 <div style={{textAlign: 'center'}}>
   <Whitebox>
-    <h2>Lorem ipsum dolor sit amet</h2>
-    <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis. Non enim praesent elementum facilisis leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Ultrices dui sapien eget mi proin. Nisl tincidunt eget nullam non nisi. Vulputate odio ut enim blandit volutpat. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan.</p>
+    <h2>Software - Angepasst und inovativ</h2>
+    <p>Individualsoftware kommt überall dort zum Einsatz, wo Standardlösungen die individuelle Problemstellung verfehlt. 
+        Die Realisierung moderner Weblösungen gehört genauso zu unserer Engagement, wie die konstruktive Zusammenarbeit mit unseren Kundinnen und Kunden. 
+        Dabei begleiten wir Sie von der ersten Idee über die Konzeption bis hin zur Umsetzung. Auch danach stehen wir an Ihrer Seite und bieten Support und Schulungen.
+    </p>
 
     <br />
     <CardFlexGroup>
@@ -25,7 +28,7 @@ const IndexPage = () => (
           <h4>Konzeption</h4>
         </IconCardHeader>
         <IconCardContent>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis</p>
+          <p>Gute Software beginnt mit einem durchdachten Konzept. In der Konzeptionsphase arbeiten wir eng mit dem Kunden zusammen für eine optimale Lösung.</p>
         </IconCardContent>
       </IconCard>
       <IconCard imgSrc={DevelopIcon}>

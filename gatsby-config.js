@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'mip Software - Individualsoftware aus Berlin',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
