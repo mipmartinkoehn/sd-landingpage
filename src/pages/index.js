@@ -28,7 +28,7 @@ const IndexPage = () => (
           <h4>Konzeption</h4>
         </IconCardHeader>
         <IconCardContent>
-          <p>Gute Software beginnt mit einem durchdachten Konzept. In der Konzeptionsphase arbeiten wir eng mit dem Kunden zusammen für eine optimale Lösung.</p>
+          <p>Gute Software beginnt mit einem durchdachten Konzept. Von der ersten Idee arbeiten wir eng mit Ihnen zusammen für eine optimale Lösung.</p>
         </IconCardContent>
       </IconCard>
       <IconCard imgSrc={DevelopIcon}>
@@ -36,7 +36,7 @@ const IndexPage = () => (
           <h4>Softwareentwicklung</h4>
         </IconCardHeader>
         <IconCardContent>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis</p>
+          <p>Wir entwickeln mit aktuellen Technologien damit wir Ihnen zuverlässige und wartbare Produkte zur Verfügung stellen können.</p>
         </IconCardContent>
       </IconCard>
       <IconCard imgSrc={SupportIcon}>
@@ -44,7 +44,7 @@ const IndexPage = () => (
           <h4>Support und Wartung</h4>
         </IconCardHeader>
         <IconCardContent>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis</p>
+          <p>Auch eine individuell entwickelte Software bedarf der Pflege und Weiterentwicklung. Wir sind Ihr Partner!</p>
         </IconCardContent>
       </IconCard>
     </CardFlexGroup>
@@ -69,4 +69,4 @@ const IndexPage = () => (
 </div>
 )
 
-export default IndexPage
+export default IndexPage;
