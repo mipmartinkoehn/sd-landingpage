@@ -34,9 +34,9 @@ class Footer extends Component {
                     <img src={mipLogo} style={imgStyle} />
                     <div style={{float: 'right', marginTop: '2.2rem'}}>
                         <ul style={ulStyle}>
-                            <li style={liStyle}><Link style={linkStyle} to="/page-2/">Impressum</Link></li>
-                            <li style={liStyle}><Link style={linkStyle} to="/page-2/">Datenschutz</Link></li>
-                            <li style={liStyle}><Link style={linkStyle} to="/page-2/">Kontakt</Link></li>
+                            <li style={liStyle}><Link style={linkStyle} to="/impressum/">Impressum</Link></li>
+                            <li style={liStyle}><Link style={linkStyle} to="/data-protection/">Datenschutz</Link></li>
+                            <li style={liStyle}><Link style={linkStyle} to="/contact/">Kontakt</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -12,19 +12,25 @@ class HeaderTitle extends React.Component {
         title = 'INDIVIDUALSOFTWARE: \nSMARTE KONZEPTE. \nZUVERLÄSSIGE UMSETZUNG!';
         break;
       case withPrefix("/software-dev/"):
-        title = 'SOFTWAREENTWICKLUNG';
+        title = 'Softwareentwicklung';
         break;
       case withPrefix("/it-consulting/"):
-        title = 'IT-BERATUNG';
+        title = 'IT-Beratung';
         break;
       case withPrefix("/support/"):
-        title = 'SUPPORT UND SCHULUNGEN';
+        title = 'Support und Schulungen';
         break;
       case withPrefix("/projects/"):
-        title = 'PROJEKTE';
+        title = 'Projekte';
         break;
       case withPrefix("/contact/"):
-        title = 'KONTAKT';
+        title = 'Kontakt';
+        break;
+      case withPrefix("/data-protection/"):
+        title = 'Datenschutz';
+        break;
+      case withPrefix("/impressum/"):
+        title = 'Impressum';
         break;
       default:
         title = <section className="error-container">
