@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import React from 'react';
 import Whitebox from '../components/white-box/white-box';
 import './contact.css';
 import Greybox from '../components/grey-box/grey-box';
@@ -33,7 +32,7 @@ const Contact = () => (
           </p>
           <p className="full-width">
             <label htmlFor="message">Ihre Nachricht an uns</label>
-            <textarea name="message" id="message" rows="12"></textarea>
+            <textarea name="message" id="message" rows="12" />
           </p>
           <p className="full-width">
             <input type="submit" value="Nachricht absenden" />

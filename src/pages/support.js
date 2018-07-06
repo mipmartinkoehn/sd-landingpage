@@ -1,5 +1,4 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
 import Whitebox from '../components/white-box/white-box';
 import Greybox from '../components/grey-box/grey-box';
 import BlueBox from '../components/blue-box/blue-box';

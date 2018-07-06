@@ -19,7 +19,7 @@ const Layout = ({ children, data, location }) => (
     <div>
       {children()}
     </div>
-    <Footer></Footer>
+    <Footer />
   </div>
 )
 

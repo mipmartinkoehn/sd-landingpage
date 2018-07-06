@@ -29,7 +29,7 @@ const SoftwareDev = () => (
           Veröffentlichen
         </IconBall>
       </div>
-      <div style={{display: 'inline-block', width: '12.5rem'}}></div>
+      <div style={{display: 'inline-block', width: '12.5rem'}} />
       <div style={{display: 'inline-block'}}>
         <IconBall bgColor='#13597C' color='#fff' imgSrc={CodeWhite}>
           Entwicklung

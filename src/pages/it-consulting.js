@@ -1,5 +1,4 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
 import Whitebox from '../components/white-box/white-box';
 import Process from '../images/fotalia_sm_m10.jpg';
 import LinkedButton from '../components/link-button/link-button';
