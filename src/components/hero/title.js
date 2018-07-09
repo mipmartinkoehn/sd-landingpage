@@ -26,6 +26,9 @@ class HeaderTitle extends React.Component {
       case withPrefix("/contact/"):
         title = 'Kontakt';
         break;
+      case withPrefix("/contact-success/"):
+        title = 'Kontaktanfrage erfolgreich gesendet';
+        break;
       case withPrefix("/data-protection/"):
         title = 'Datenschutz';
         break;
