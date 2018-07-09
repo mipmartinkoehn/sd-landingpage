@@ -1,8 +1,8 @@
 import React from 'react'
-import Greybox from '../components/grey-box/grey-box';
+import Greybox from '../components/grey-box/grey-box.module';
 import BlueBox from '../components/blue-box/blue-box';
 
-import Whitebox from '../components/white-box/white-box';
+import Whitebox from '../components/white-box/white-box.module';
 import CodeWhite from '../images/code-icon_weiß.png';
 import RocketWhite from '../images/raketen-icon_weiß.png';
 import ConceptWhite from '../images/konzept-icon_weiß.png';

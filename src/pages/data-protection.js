@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Whitebox from '../components/white-box/white-box';
+import Whitebox from '../components/white-box/white-box.module';
 
 class DataProtection extends Component {
     render() {

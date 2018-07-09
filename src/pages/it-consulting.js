@@ -1,8 +1,8 @@
 import React from 'react';
-import Whitebox from '../components/white-box/white-box';
+import Whitebox from '../components/white-box/white-box.module';
 import Process from '../images/fotalia_sm_m10.jpg';
 import LinkedButton from '../components/link-button/link-button';
-import Greybox from '../components/grey-box/grey-box';
+import Greybox from '../components/grey-box/grey-box.module';
 import BlueBox from '../components/blue-box/blue-box';
 
 const ITConsulting = () => (

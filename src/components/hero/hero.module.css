@@ -1,0 +1,18 @@
+.headerStyle {
+  background: url(../../images/bubbles.png) left bottom,
+    linear-gradient(to right, #00567a, #482e7a, #ac1332);
+  height: 100vh;
+  background-repeat: no-repeat;
+  margin-bottom: 1.45rem;
+  position: relative;
+  max-height: 900px;
+  overflow: hidden;
+}
+
+.svgStyle {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}

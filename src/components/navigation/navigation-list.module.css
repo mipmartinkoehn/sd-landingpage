@@ -1,0 +1,9 @@
+.logoStyle {
+  float: left;
+  height: 40px;
+}
+
+.ulStyle {
+  list-style-type: none;
+  margin: 0;
+}

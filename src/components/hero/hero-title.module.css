@@ -1,0 +1,15 @@
+.centerStyle {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 7.45rem 1.0875rem;
+}
+
+.flexStyle {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 500px;
+  height: 100vh;
+  color: #fff;
+}

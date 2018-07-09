@@ -1,6 +1,6 @@
 import React from 'react';
-import Whitebox from '../components/white-box/white-box';
-import Greybox from '../components/grey-box/grey-box';
+import Whitebox from '../components/white-box/white-box.module';
+import Greybox from '../components/grey-box/grey-box.module';
 import BlueBox from '../components/blue-box/blue-box';
 
 const Projects = () => (
