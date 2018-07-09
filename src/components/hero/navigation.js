@@ -5,7 +5,7 @@ import DynamicHeader from './dynamic-header';
 import msLight from '../../images/mip-software-logo_weiß.png';
 import msDark from '../../images/mip-software-logo.png';
 import NavigationItems from './navigation-items';
-import './header.css';
+import './navigation.css';
 
 class Navigation extends React.Component {
     render() {

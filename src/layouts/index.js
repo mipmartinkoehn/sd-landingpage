@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header/header'
+import Hero from '../components/hero/hero'
 import Footer from '../components/footer/footer'
 import './index.css'
 
@@ -15,7 +15,7 @@ const Layout = ({ children, data, location }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={location.pathname} />
+    <Hero siteTitle={location.pathname} />
     <div>
       {children()}
     </div>

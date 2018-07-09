@@ -4,7 +4,7 @@ import HeaderTitle from './title';
 import Bubbles from '../../images/bubbles.png';
 
 
-class Header extends React.Component {
+class Hero extends React.Component {
   render() {
     const siteTitle = this.props.siteTitle;
 
@@ -41,4 +41,4 @@ class Header extends React.Component {
 }
 
 
-export default Header
+export default Hero
