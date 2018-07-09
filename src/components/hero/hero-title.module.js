@@ -8,7 +8,7 @@ class HeroTitle extends React.Component {
     switch (this.props.location) {
       case withPrefix('/'):
         title =
-          'INDIVIDUALSOFTWARE: \nSMARTE KONZEPTE. \nZUVERLÄSSIGE UMSETZUNG!'
+          'INDIVIDUALSOFTWARE: SMARTE KONZEPTE. ZUVERLÄSSIGE UMSETZUNG!'
         break
       case withPrefix('/software-dev/'):
         title = 'Softwareentwicklung'
@@ -50,13 +50,7 @@ class HeroTitle extends React.Component {
   }
 
   render() {
-    return (
-      <div className={styles.centerStyle}>
-        <div className={styles.flexStyle}>
-          <h1 style={{ margin: 0 }}>{this.getTitle()}</h1>
-        </div>
-      </div>
-    )
+    return <h1 className={styles.header}>{this.getTitle()}</h1>
   }
 }
 

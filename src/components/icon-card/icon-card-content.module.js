@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
+import styles from './icon-card-content.module.css';
 
 class IconCardContent extends Component {
 
     render() {
-        const cardContentStyle = {
-            textAlign: 'left',
-            fontSize: '0.8rem',
-            padding: '0 2rem 1rem'
-        }
         return (
-            <div style={cardContentStyle}>
+            <div className={styles.cardContentStyle}>
                 {this.props.children}
             </div>
         )

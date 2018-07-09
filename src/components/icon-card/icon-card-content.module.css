@@ -1,0 +1,8 @@
+.cardContentStyle {
+  text-align: left;
+  padding: 0 2rem 1rem;
+}
+
+.cardContentStyle p {
+    font-size: .888rem
+}

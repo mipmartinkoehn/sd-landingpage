@@ -7,6 +7,10 @@
   position: relative;
   max-height: 900px;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .svgStyle {

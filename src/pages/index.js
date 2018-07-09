@@ -2,9 +2,9 @@ import React from 'react'
 import BlueBox from '../components/blue-box/blue-box';
 import Whitebox from '../components/white-box/white-box.module';
 import Greybox from '../components/grey-box/grey-box.module';
-import IconCard from '../components/icon-card/icon-card';
+import IconCard from '../components/icon-card/icon-card.module';
 import IconCardHeader from '../components/icon-card/icon-card-header';
-import IconCardContent from '../components/icon-card/icon-card-content';
+import IconCardContent from '../components/icon-card/icon-card-content.module';
 import CardFlexGroup from '../components/icon-card/icon-card-flex';
 import ConceptIcon from '../images/konzept-icon.png';
 import DevelopIcon from '../images/raketen-icon.png';

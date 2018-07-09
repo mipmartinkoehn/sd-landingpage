@@ -1,0 +1,13 @@
+.cardStyle {
+  width: 300px;
+  min-height: 360px;
+  border-top: #006185 4px solid;
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.35);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.35);
+  box-shadow: 1px 1px 8px 0px rgba(50, 50, 50, 0.35);
+  margin-top: 2rem;
+}
+
+.iconStyle {
+  margin: 1rem 0;
+}
