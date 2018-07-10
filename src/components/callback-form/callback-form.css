@@ -1,0 +1,42 @@
+.contact input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact input[type=submit] {
+    width: 100%;
+    background-color: #B81135;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+    background-color: rgb(228, 28, 71);
+}
+
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+.contact form label {
+display: block;
+}
+.contact form p {
+margin: 0;
+}
+
+.contact .full-width {
+grid-column: 1 / 3;
+}
