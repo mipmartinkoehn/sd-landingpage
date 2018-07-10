@@ -12,7 +12,7 @@ class ContactForm extends Component {
     render() {
         return (
             <div className="contact">
-                <Form form name="contact" method="POST" action="/contact-success" netlify >
+                <Form name="contact" method="POST" action="/contact-success" netlify >
                     <input type="hidden" name="form-name" value="contact" />
                     <p hidden>
                     <label>

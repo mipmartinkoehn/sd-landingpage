@@ -107,6 +107,7 @@ class Form extends Component {
       return (
         <form
           {...props}
+          netlify
           className={classNames}
           noValidate
           ref={form => (this.formEl = form)}
