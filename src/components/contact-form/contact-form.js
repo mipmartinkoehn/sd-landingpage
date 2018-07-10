@@ -64,7 +64,7 @@ class ContactForm extends Component {
                         <textarea name="message" id="message" rows="12" required/>
                         <label className="invalid-feedback" />
                     </p>
-                    <div netlify-recaptcha />
+                    <div data-netlify-recaptcha />
                     <p className="full-width">
                         <input type="submit" value="Nachricht absenden" />
                     </p>
