@@ -9,7 +9,7 @@ import RocketWhite from '../images/raketen-icon_weiß.png';
 import ConceptWhite from '../images/konzept-icon_weiß.png';
 import MagnifierWhite from '../images/lupe-icon_weiß.png';
 import IconBall from '../components/icon-ball/icon-ball';
-import Golang from '../images/golang.svg';
+import Golang from '../images/golang-blue.svg';
 import Angular from '../images/angular.svg';
 import MongoDB from '../images/mongodb.png';
 import NodeJs from '../images/nodejs.png';
@@ -53,39 +53,39 @@ const SoftwareDev = () => (
     </div>
   </Whitebox>
   <Greybox>
-  <h2>Web-Anwendungen</h2>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis. Non enim praesent elementum facilisis leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Ultrices dui sapien eget mi proin. Nisl tincidunt eget nullam non nisi. Vulputate odio ut enim blandit volutpat. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan.
-  </p>
-  </Greybox>
-  <BlueBox>
-    <h2>Technologien</h2>
-    <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
-      <div style={{margin: '0 1rem'}}>
-        <a href="https://angular.io/"><img src={Angular}   style={{height: '200px'}}/></a>
-      </div>
-      <div style={{margin: '2rem 1rem'}}>
-      <a href="https://firebase.google.com/"><img src={Firebase}   style={{maxHeight: '200px'}}/></a>
-      </div>
-      <div style={{margin: '0 1rem'}}>
-      <a href="https://golang.org/"><img src={Golang}   style={{height: '200px'}}/></a>
-      </div>
-      <div style={{margin: '0 1rem'}}>
-      <a href="https://nodejs.org/"><img src={NodeJs}   style={{height: '200px'}}/></a>
-      </div>
-      <div style={{margin: '0 1rem'}}>
-      <a href="https://loopback.io/"><img src={Loopback}   style={{maxHeight: '200px'}}/></a>
-      </div>
-      <div style={{margin: '0 1rem'}}>
-      <a href="https://www.mongodb.com/pressroom/"><img src={MongoDB}   style={{maxHeight: '100px'}}/></a>
-      </div>
-    </div>
-  </BlueBox>
-  <Whitebox>
-    <h2>Migration von alten Systemen</h2>
+    <h2>Web-Anwendungen</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis. Non enim praesent elementum facilisis leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Ultrices dui sapien eget mi proin. Nisl tincidunt eget nullam non nisi. Vulputate odio ut enim blandit volutpat. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan.
     </p>
+  </Greybox>
+  <BlueBox>
+    <h2>Migration von alten Systemen</h2>
+    <p style={{color: '#fff'}}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis. Non enim praesent elementum facilisis leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Ultrices dui sapien eget mi proin. Nisl tincidunt eget nullam non nisi. Vulputate odio ut enim blandit volutpat. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan.
+    </p>
+  </BlueBox>
+  <Whitebox>
+    <h2>Technologien</h2>
+      <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
+        <div style={{margin: '0 1rem'}}>
+          <a href="https://angular.io/"><img src={Angular}   style={{height: '200px'}}/></a>
+        </div>
+        <div style={{margin: '2rem 1rem'}}>
+        <a href="https://firebase.google.com/"><img src={Firebase}   style={{maxHeight: '200px'}}/></a>
+        </div>
+        <div style={{margin: '0 1rem'}}>
+        <a href="https://golang.org/"><img src={Golang}   style={{height: '200px'}}/></a>
+        </div>
+        <div style={{margin: '0 1rem'}}>
+        <a href="https://nodejs.org/"><img src={NodeJs}   style={{height: '200px'}}/></a>
+        </div>
+        <div style={{margin: '0 1rem'}}>
+        <a href="https://loopback.io/"><img src={Loopback}   style={{maxHeight: '200px'}}/></a>
+        </div>
+        <div style={{margin: '0 1rem'}}>
+        <a href="https://www.mongodb.com/pressroom/"><img src={MongoDB}   style={{maxHeight: '100px'}}/></a>
+        </div>
+      </div>
   </Whitebox>
 </div>
 )

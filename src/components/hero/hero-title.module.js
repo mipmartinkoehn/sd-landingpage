@@ -25,6 +25,9 @@ class HeroTitle extends React.Component {
       case withPrefix('/contact/'):
         title = 'Kontakt'
         break
+      case withPrefix('/callback/'):
+        title = 'Rückrufwunsch'
+        break
       case withPrefix('/data-protection/'):
         title = 'Datenschutz'
         break

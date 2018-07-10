@@ -7,7 +7,7 @@ import CallbackForm from '../components/callback-form/callback-form';
 const Callback = () => (
     <div>
       <Whitebox>
-        <h2>Sie haben weitere fregen? Wir rufen Sie gerne zurück</h2>
+        <h2>Sie haben weitere Fragen? Wir rufen Sie gerne zurück</h2>
         <CallbackForm />
       </Whitebox>
       <Greybox>
