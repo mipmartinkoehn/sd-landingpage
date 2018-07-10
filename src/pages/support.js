@@ -28,7 +28,7 @@ const Support = () => (
   </Greybox>
   <BlueBox>
     <h2>Service</h2>
-    <p>
+    <p style={{color: '#fff'}}>
       Im Rahmen von Wartungsverträgen stellen wir Issue-Tracking-Systeme und Notfallrufnummern bereit, damit Sie unkompliziert Ihr Anliegen adressieren können. Wir beantworten Ihr Anliegen umgehend innerhalb der vereinbarten Reaktionszeiten.
       Der reibungslose Betrieb Ihrer Softwaresysteme hat für uns oberste Priorität.
     </p>
