@@ -1,7 +1,7 @@
 import React from 'react';
 import Whitebox from '../components/white-box/white-box.module';
 import Process from '../images/fotalia_sm_m10.jpg';
-import LinkedButton from '../components/link-button/link-button';
+import LinkButton from '../components/link-button/link-button.module';
 import Greybox from '../components/grey-box/grey-box.module';
 import BlueBox from '../components/blue-box/blue-box';
 
@@ -28,7 +28,7 @@ const ITConsulting = () => (
 
     <br />
     <div style={{textAlign: 'center'}}>
-      <LinkedButton to="https://mip-consult.de" maxWidth="300px" bgColor="#B81135" color="#fff" external >Mehr erfahren</LinkedButton>
+      <LinkButton to="https://mip-consult.de" maxWidth="300px" bgColor="#B81135" color="#fff" external >Mehr erfahren</LinkButton>
     </div>
   </Whitebox>
   <Greybox>
@@ -50,7 +50,7 @@ const ITConsulting = () => (
       Insofern müssen Unternehmen unterschiedliche Gesetze berücksichtigen und sinnvoll ins Tagesgeschäft integrieren. Aufgrund der eigenen Strukturen fällt es Unternehmen oft schwer, den Datenschutz innerhalb der gesamten Organisation durchgängig und widerspruchsfrei zu etablieren.
     </p>
     <div style={{textAlign: 'center'}}>
-      <LinkedButton to="https://sofortdatenschutz.de" maxWidth="300px" bgColor="#B81135" color="#fff" external >Mehr erfahren</LinkedButton>
+      <LinkButton to="https://sofortdatenschutz.de" maxWidth="300px" bgColor="#B81135" color="#fff" external >Mehr erfahren</LinkButton>
     </div>
   </BlueBox>
 </div>
