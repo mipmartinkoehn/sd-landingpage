@@ -5,10 +5,8 @@ import styles from './hero.module.css'
 class Hero extends React.Component {
   render() {
     const { siteTitle, big } = this.props
-    let height;
-    if (!big) {
-      height = '46vh';
-    } else {
+    let height = '46vh';
+    if (big) {
       height = '100vh';
     }
     return (
