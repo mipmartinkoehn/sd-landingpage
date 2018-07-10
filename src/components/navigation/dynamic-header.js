@@ -1,6 +1,7 @@
 // From thinhvo0108/react-sticky-dynamic-header
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { relative } from 'path';
 
 const elementName = '__react-sticky-dynamic-header__';
 let componentOK = true;
@@ -47,7 +48,7 @@ class DynamicHeader extends React.Component {
     }
     _calcTranslation(h1, h2) {
         var _window = window;
-        var heightDiff = parseInt(h1) - parseInt(h2);
+        var heightDiff = (parseInt(h1) - parseInt(h2)/ 2);
         if ((heightDiff <= 0) || (!this.props.useHeadersDifference)) heightDiff = parseInt(h1);
         var scrollPos = _window.scrollY;
         if (scrollPos > heightDiff) {
@@ -65,12 +66,12 @@ class DynamicHeader extends React.Component {
         var tmpEle;
         var returnEle;
         if (!componentOK) {
-            tmpBigComponent = (
+            const tmpBigComponent = (
         <div style={{height: '50px', backgroundColor: '#666', width: '100%', position: 'relative', top: 0, zIndex: 1039, textAlign: 'center',}}>
           <div style={{paddingTop: '15px',}}>ERROR [react-sticky-dynamic-header]: 2 components must be passed as children!</div>
         </div>
       );
-            tmpSmallComponent = (
+            const tmpSmallComponent = (
         <div style={{height: '50px', backgroundColor: '#ccc', width: '100%', position: 'fixed', top: 0, zIndex: 1039, textAlign: 'center', }}>
           <div style={{paddingTop: '15px',}}>ERROR [react-sticky-dynamic-header]: 2 components must be passed as children!</div>
         </div>
@@ -134,10 +135,10 @@ class DynamicHeader extends React.Component {
                 bigHeaderComponent = React.cloneElement(this.props.children[this.state.bigIndex], {key: elementName+'_1'});
             }
             returnEle = (
-        <div>
+        <div style={{position: 'absolute'}}>
           {tmpEle}
           {styleEle}
-          <ReactCSSTransitionGroup transitionName={elementName+'_1'} transitionAppear={false} transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionLeave={false} transitionEnter={this.props.hasEffect}>
+          <ReactCSSTransitionGroup transitionName={elementName+'_1'} transitionAppear={false} transitionEnterTimeout={100} transitionLeaveTimeout={100} transitionLeave={false} transitionEnter={this.props.hasEffect}>
             {bigHeaderComponent}
           </ReactCSSTransitionGroup>
         </div>
@@ -152,13 +153,13 @@ class DynamicHeader extends React.Component {
                 smallHeaderComponent = React.cloneElement(this.props.children[this.state.smallIndex], {key: elementName+'_2'});
             }
             returnEle = (
-        <div>
+        <div style={{position: 'absolute'}}>
           {tmpEle}
           {styleEle}
-          <ReactCSSTransitionGroup transitionName={elementName+'_2'} transitionAppear={false} transitionEnterTimeout={500} transitionLeaveTimeout={500} transitionLeave={false} transitionEnter={this.props.hasEffect}>
+          <ReactCSSTransitionGroup transitionName={elementName+'_2'} transitionAppear={false} transitionEnterTimeout={100} transitionLeaveTimeout={100} transitionLeave={false} transitionEnter={this.props.hasEffect}>
             {smallHeaderComponent}
           </ReactCSSTransitionGroup>
-          <div style={{height: (this.state.bigElementHeight + 'px'), width: '100%', clear: 'both'}}></div>
+          <div style={{height: (this.state.bigElementHeight + 'px'), width: '100%', clear: 'both'}} />
         </div>
       );
         }
@@ -168,7 +169,7 @@ class DynamicHeader extends React.Component {
 
 DynamicHeader.defaultProps = {
     hasEffect: true,
-    effectDuration: 600,
+    effectDuration: 100,
     useHeadersDifference: false,
 };
 
