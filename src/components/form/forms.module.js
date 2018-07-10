@@ -80,7 +80,7 @@ class Form extends Component {
   
       // If the call of the validate method was successful, we can proceed with form submission. Otherwise we do nothing.
       if (this.validate()) {
-        this.props.submit();
+        this.props.submit(event);
       }
   
       this.setState({ isValidated: true });
