@@ -1,18 +1,39 @@
 import React, { Component } from 'react';
+import { navigateTo } from 'gatsby-link';
 import './contact-form.css';
 import Form from '../form/forms.module';
 import '../form/forms.css';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 class ContactForm extends Component {
     constructor(props) {
         super(props);
-        this.state = { formSend: false};
+        this.state = { formSend: false, name: "", email: "", message: "", phone: "", firm: "" };
     }
+
+    handleSubmit = e => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...this.state })
+        })
+          .then(() => navigateTo('/contact-success'))
+          .catch(error => console.log(error));
+  
+        e.preventDefault();
+      };
+  
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
 
     render() {
         return (
             <div className="contact">
-                <Form name="contact" method="POST" action="/contact-success" netlify >
+                <Form name="contact" method="POST" action="/contact-success" submit={this.handleSubmit} netlify >
                     <input type="hidden" name="form-name" value="contact" />
                     <p hidden>
                     <label>
@@ -43,7 +64,7 @@ class ContactForm extends Component {
                         <textarea name="message" id="message" rows="12" required/>
                         <label className="invalid-feedback" />
                     </p>
-                    <div data-netlify-recaptcha />
+                    <div netlify-recaptcha />
                     <p className="full-width">
                         <input type="submit" value="Nachricht absenden" />
                     </p>

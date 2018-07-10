@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { navigateTo } from 'gatsby-link';
 import './callback-form.css';
 import Form from '../form/forms.module';
 import '../form/forms.css';
@@ -20,10 +21,10 @@ class CallbackForm extends Component {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...this.state })
+          body: encode({ "form-name": "callback", ...this.state })
         })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
+          .then(() => navigateTo('/contact-success'))
+          .catch(error => console.log(error));
   
         e.preventDefault();
       };
