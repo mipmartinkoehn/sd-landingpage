@@ -42,6 +42,7 @@ class CallbackForm extends Component {
                         <textarea name="message" id="message" rows="12" />
                         
                     </p>
+                    <div data-netlify-recaptcha />
                     <p className="full-width">
                         <input type="submit" value="Rückruf Wunsch absenden" />
                     </p>
