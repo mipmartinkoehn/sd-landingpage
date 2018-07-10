@@ -4,9 +4,15 @@ import styles from './hero.module.css'
 
 class Hero extends React.Component {
   render() {
-    const siteTitle = this.props.siteTitle
+    const { siteTitle, big } = this.props
+    let height;
+    if (!big) {
+      height = '46vh';
+    } else {
+      height = '100vh';
+    }
     return (
-      <div className={styles.headerStyle}>
+      <div className={styles.headerStyle} style={{height: height}}>
         <svg
           className={styles.svgStyle}
           width="2000px"

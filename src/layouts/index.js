@@ -1,10 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import NavigationBar from '../components/navigation/navigation-bar.module';
-import Hero from '../components/hero/hero.module';
-import Footer from '../components/footer/footer';
-import './index.css';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { withPrefix } from 'gatsby-link'
+import NavigationBar from '../components/navigation/navigation-bar.module'
+import Hero from '../components/hero/hero.module'
+import Footer from '../components/footer/footer'
+import './index.css'
+
+function GetHero(props) {
+  const location = props.location
+  if (location.pathname === withPrefix('/')) {
+    return <Hero siteTitle={location.pathname} big={true} />
+  }
+  return <Hero siteTitle={location.pathname} />
+}
 
 const Layout = ({ children, data, location }) => (
   <div>
@@ -15,11 +24,9 @@ const Layout = ({ children, data, location }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <NavigationBar/>
-    <Hero siteTitle={location.pathname} />
-    <div>
-      {children()}
-    </div>
+    <NavigationBar />
+    <GetHero location={location}/>
+    <div>{children()}</div>
     <Footer />
   </div>
 )
