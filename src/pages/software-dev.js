@@ -12,6 +12,8 @@ import Golang from '../images/golang.svg';
 import Angular from '../images/angular.svg';
 import MongoDB from '../images/mongodb.png';
 import NodeJs from '../images/nodejs.png';
+import Firebase from '../images/firebase-logo.svg';
+import Loopback from '../images/loopback-logo.png';
 
 const SoftwareDev = () => (
 <div>
@@ -58,18 +60,24 @@ const SoftwareDev = () => (
   <BlueBox>
     <h2>Technologien</h2>
     <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center'}}>
-    <div style={{margin: '0 1rem'}}>
-      <img src={Angular}   style={{height: '200px'}}/>
-    </div>
-    <div style={{margin: '0 1rem'}}>
-      <img src={Golang}   style={{height: '200px'}}/>
-    </div>
-    <div style={{margin: '0 1rem'}}>
-      <img src={NodeJs}   style={{height: '200px'}}/>
-    </div>
-    <div style={{margin: '0 1rem'}}>
-      <img src={MongoDB}   style={{maxHeight: '100px'}}/>
-    </div>
+      <div style={{margin: '0 1rem'}}>
+        <img src={Angular}   style={{height: '200px'}}/>
+      </div>
+      <div style={{margin: '2rem 1rem'}}>
+        <img src={Firebase}   style={{maxHeight: '200px'}}/>
+      </div>
+      <div style={{margin: '0 1rem'}}>
+        <img src={Golang}   style={{height: '200px'}}/>
+      </div>
+      <div style={{margin: '0 1rem'}}>
+        <img src={NodeJs}   style={{height: '200px'}}/>
+      </div>
+      <div style={{margin: '0 1rem'}}>
+        <img src={Loopback}   style={{maxHeight: '200px'}}/>
+      </div>
+      <div style={{margin: '0 1rem'}}>
+        <img src={MongoDB}   style={{maxHeight: '100px'}}/>
+      </div>
     </div>
   </BlueBox>
   <Whitebox>
