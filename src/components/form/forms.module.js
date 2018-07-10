@@ -112,6 +112,7 @@ class Form extends Component {
           ref={form => (this.formEl = form)}
           onSubmit={this.submitHandler}
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
           {this.props.children}
         </form>
