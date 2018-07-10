@@ -33,7 +33,7 @@ class ContactForm extends Component {
     render() {
         return (
             <div className="contact">
-                <Form name="contact" method="POST" action="/contact-success" submit={this.handleSubmit} netlify >
+                <Form name="contact" method="POST" action="/contact-success" submit={this.handleSubmit} netlify="true" >
                     <input type="hidden" name="form-name" value="contact" />
                     <p hidden>
                     <label>
@@ -64,7 +64,7 @@ class ContactForm extends Component {
                         <textarea name="message" id="message" rows="12" required/>
                         <label className="invalid-feedback" />
                     </p>
-                    <div netlify-recaptcha></div>
+                    <div netlify-recaptcha="true" />
                     <p className="full-width">
                         <input type="submit" value="Nachricht absenden" />
                     </p>
