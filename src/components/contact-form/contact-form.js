@@ -33,7 +33,7 @@ class ContactForm extends Component {
     render() {
         return (
             <div className="contact">
-                <Form name="contact" method="POST" action="/contact-success" submit={this.handleSubmit} netlify="true" >
+                <Form name="contact" method="POST" action="/contact-success" submit={this.handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
                     <p hidden>
                     <label>

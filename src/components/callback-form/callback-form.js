@@ -35,7 +35,7 @@ class CallbackForm extends Component {
         const { name, firm, email, phone, message } = this.state;
         return (
             <div className="contact">
-                <Form name="callback" method="POST" action="/contact-success" submit={this.handleSubmit} netlify >
+                <Form name="callback" method="POST" action="/contact-success" submit={this.handleSubmit} >
                     <input type="hidden" name="form-name" value="callback" />
                     <p hidden>
                     <label>
@@ -65,7 +65,7 @@ class CallbackForm extends Component {
                         <textarea name="message" id="message" rows="12" value={message} onChange={this.handleChange} />
                         
                     </p>
-                   
+                    <div netlify-recaptcha="true" />
                     <p className="full-width">
                         <input type="submit" value="Rückruf Wunsch absenden" />
                     </p>
