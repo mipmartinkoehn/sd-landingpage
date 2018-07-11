@@ -29,7 +29,7 @@ class CallbackForm extends Component {
     
       handleSubmit = e => {
         e.preventDefault();
-        if (!this.state['gg-recaptcha-response']) {
+        if (!this.state['g-recaptcha-response']) {
             alert('recaptcha nicht bestätigt')
             return;
         }
