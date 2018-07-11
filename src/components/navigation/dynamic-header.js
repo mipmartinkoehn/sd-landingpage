@@ -48,7 +48,7 @@ class DynamicHeader extends React.Component {
     }
     _calcTranslation(h1, h2) {
         var _window = window;
-        var heightDiff = (parseInt(h1) - parseInt(h2)/ 2);
+        var heightDiff = window.innerHeight * 0.08 ;// parseInt(h1) - parseInt(h2);
         if ((heightDiff <= 0) || (!this.props.useHeadersDifference)) heightDiff = parseInt(h1);
         var scrollPos = _window.scrollY;
         if (scrollPos > heightDiff) {
