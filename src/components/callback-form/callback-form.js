@@ -36,7 +36,7 @@ class CallbackForm extends Component {
         return (
             <div className="contact">
                 <form name="callback" method="POST" action="/contact-success" netlify="true" netlify-honeypot="bot-field">
-                    {/* <input type="hidden" name="form-name" value="callback" /> */}
+                    <input type="hidden" name="form-name" value="callback" />
                     <p hidden>
                     <label>
                         Don’t fill this out:{" "}
