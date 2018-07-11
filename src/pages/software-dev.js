@@ -15,6 +15,7 @@ import MongoDB from '../images/mongodb.png';
 import NodeJs from '../images/nodejs.png';
 import Firebase from '../images/firebase-logo.svg';
 import Loopback from '../images/loopback-logo.png';
+import Docker from '../images/docker_vertical.png';
 
 const SoftwareDev = () => (
 <div>
@@ -83,7 +84,10 @@ const SoftwareDev = () => (
         <a href="https://loopback.io/"><img src={Loopback}   style={{maxHeight: '200px'}}/></a>
         </div>
         <div style={{margin: '0 1rem'}}>
-        <a href="https://www.mongodb.com/pressroom/"><img src={MongoDB}   style={{maxHeight: '100px'}}/></a>
+        <a href="https://www.docker.com/"><img src={Docker}   style={{maxHeight: '200px'}}/></a>
+        </div>
+        <div style={{margin: '0 1rem'}}>
+        <a href="https://www.mongodb.com/"><img src={MongoDB}   style={{maxHeight: '150px'}}/></a>
         </div>
       </div>
   </Whitebox>
