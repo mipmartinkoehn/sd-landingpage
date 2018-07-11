@@ -35,14 +35,15 @@ class CallbackForm extends Component {
         const { name, firm, email, phone, message } = this.state;
         return (
             <div className="contact">
-                <form name="callback" method="POST" action="/contact-success" netlify="true" netlify-honeypot="bot-field">
+                <form name="callback" method="POST" action="/contact-success" netlify="true" >
+                {/* netlify-honeypot="bot-field" */}
                     <input type="hidden" name="form-name" value="callback" />
-                    <p hidden>
+                    {/* <p hidden>
                     <label>
                         Don’t fill this out:{" "}
                         <input name="bot-field"/>
                     </label>
-                    </p>
+                    </p> */}
                     <p>
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" value={name} onChange={this.handleChange} />
@@ -65,6 +66,7 @@ class CallbackForm extends Component {
                         <textarea name="message" id="message" rows="12" value={message} onChange={this.handleChange} />
                         
                     </p>
+                    <div data-netlify-recaptcha></div>
                     <p className="full-width">
                         <input type="submit" value="Rückruf Wunsch absenden" />
                     </p>
