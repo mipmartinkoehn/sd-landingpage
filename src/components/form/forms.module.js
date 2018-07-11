@@ -102,7 +102,6 @@ class Form extends Component {
       if (this.state.isValidated) {
         classNames.push("was-validated");
       }
-      console.log('props', this.props)
       // The form will have a refference in the component and a submit handler set to the component's submitHandler
       return (
         <form

@@ -29,13 +29,13 @@ class CallbackForm extends Component {
         e.preventDefault();
       };
   
-      handleChange = e => this.setState({ [e.target.name]: e.target.value });
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
         const { name, firm, email, phone, message } = this.state;
         return (
             <div className="contact">
-                <Form name="callback" method="POST" action="/contact-success" submit={this.handleSubmit} >
+                <form name="callback" method="POST" action="/contact-success" netlify="true">
                     <input type="hidden" name="form-name" value="callback" />
                     <p hidden>
                     <label>
@@ -69,7 +69,7 @@ class CallbackForm extends Component {
                     <p className="full-width">
                         <input type="submit" value="Rückruf Wunsch absenden" />
                     </p>
-                </Form>
+                </form>
             </div>
         )
     }
