@@ -5,7 +5,11 @@ import styles from './hero-title.module.css'
 class HeroTitle extends React.Component {
   getTitle() {
     let title = ''
-    switch (this.props.location) {
+    let location = this.props.location;
+    if (location.charAt(location.length-1) !== '/') {
+      location += '/';
+    }
+    switch (location) {
       case withPrefix('/'):
         title =
           'INDIVIDUALSOFTWARE: SMARTE KONZEPTE. ZUVERLÄSSIGE UMSETZUNG!'
