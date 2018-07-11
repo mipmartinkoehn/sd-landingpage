@@ -33,7 +33,7 @@ class HeroTitle extends React.Component {
         title = 'Rückrufwunsch'
         break
       case withPrefix('/data-protection/'):
-        title = 'Datenschutz'
+        title = 'Datenschutzerklärung'
         break
       case withPrefix('/impressum/'):
         title = 'Impressum'

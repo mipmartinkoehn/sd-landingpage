@@ -1,0 +1,11 @@
+.liStyle {
+  display: inline;
+  padding: 10px;
+}
+
+.linkStyle {
+  text-decoration: none;
+  color: #ac1332;
+  font-weight: 600;
+  font-size: 1rem;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import BlueBox from '../components/blue-box/blue-box';
+import BlueBox from '../components/blue-box/blue-box.module';
 import Whitebox from '../components/white-box/white-box.module';
 import Greybox from '../components/grey-box/grey-box.module';
 import IconCard from '../components/icon-card/icon-card.module';
@@ -58,7 +58,7 @@ ob man auf eine Standardlösung oder eine Individuallösung setzen soll. Die Ant
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th/>
             <th>Standardsoftware</th>
             <th>Individualsoftware</th>
           </tr>
@@ -107,7 +107,7 @@ durch eine Individuallösung erweitern und die Vorteile aus beiden Welten nutzen
     <BlueBox>
       <br />
       <h2>Sprechen Sie uns an!</h2>
-      <p style={{ color: '#fff' }}>In einem persönlichen Gespräch können wir Ihre Ideen und Fragen individuell besprechen und Ihnen einen Vorschlag für das weiteres Vorgehen geben.</p>
+      <p>In einem persönlichen Gespräch können wir Ihre Ideen und Fragen individuell besprechen und Ihnen einen Vorschlag für das weiteres Vorgehen geben.</p>
       <LinkButton to="/contact/" maxWidth="300px" bgColor="#B81135" color="#fff">Um Rückruf bitten</LinkButton>
       <br />
     </BlueBox>

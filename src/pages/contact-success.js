@@ -1,5 +1,5 @@
 import React from 'react';
-import BlueBox from '../components/blue-box/blue-box';
+import BlueBox from '../components/blue-box/blue-box.module';
 import WhiteBox from '../components/white-box/white-box.module';
 import LinkButton from '../components/link-button/link-button.module';
 

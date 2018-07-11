@@ -3,7 +3,7 @@ import Whitebox from '../components/white-box/white-box.module';
 import Process from '../images/fotalia_sm_m10.jpg';
 import LinkButton from '../components/link-button/link-button.module';
 import Greybox from '../components/grey-box/grey-box.module';
-import BlueBox from '../components/blue-box/blue-box';
+import BlueBox from '../components/blue-box/blue-box.module';
 
 const ITConsulting = () => (
 <div>
@@ -28,7 +28,7 @@ const ITConsulting = () => (
 
     <br />
     <div style={{textAlign: 'center'}}>
-      <LinkButton to="https://mip-consult.de" maxWidth="300px" bgColor="#B81135" color="#fff" external >Mehr erfahren</LinkButton>
+      <LinkButton to="https://www.mip-consult.de/leistungen/it-loesungen/anforderungsmanagement/" maxWidth="400px" bgColor="#B81135" color="#fff" external >Mehr zu Anforderungsmanagement erfahren</LinkButton>
     </div>
   </Whitebox>
   <Greybox>
@@ -36,8 +36,18 @@ const ITConsulting = () => (
       IT-Sicherheit
     </h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed euismod nisi porta lorem mollis. Non enim praesent elementum facilisis leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Ultrices dui sapien eget mi proin. Nisl tincidunt eget nullam non nisi. Vulputate odio ut enim blandit volutpat. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan.
+      Wir stehen Ihnen als IT Sicherheitsbeauftragter zur Verfügung. Durch unsere branchenübergreifenden Erfahrungen in den Bereichen IT Sicherheit und IT Infrastruktur verbessern wir Ihre Informationssicherheit.  Bei uns ist der Leistungsumfang individuell auf Ihre Bedürfnisse zugeschnitten, sodass Sie eine optimale Kostenkontrolle haben.
     </p>
+    <p>Wir unterstützen Sie bei:</p>
+    <ul>
+      <li>Informationssicherheits-Checkup</li>
+      <li>Beratung für Geschäftsführung und Sicherheitsverantwortliche</li>
+      <li>Projektunterstützung zur Einführung eines Informationssicherheits-Managementsystems (ISMS)</li>
+      <li>u.a.</li>
+    </ul>
+    <div style={{textAlign: 'center'}}>
+      <LinkButton to="https://www.mip-consult.de/leistungen/it-loesungen/it-beratung/" maxWidth="400px" bgColor="#B81135" color="#fff" external >Mehr zu IT-Sicherheit erfahren</LinkButton>
+    </div>
   </Greybox>
   <BlueBox>
     <h2>
@@ -50,7 +60,7 @@ const ITConsulting = () => (
       Insofern müssen Unternehmen unterschiedliche Gesetze berücksichtigen und sinnvoll ins Tagesgeschäft integrieren. Aufgrund der eigenen Strukturen fällt es Unternehmen oft schwer, den Datenschutz innerhalb der gesamten Organisation durchgängig und widerspruchsfrei zu etablieren.
     </p>
     <div style={{textAlign: 'center'}}>
-      <LinkButton to="https://sofortdatenschutz.de" maxWidth="300px" bgColor="#B81135" color="#fff" external >Mehr erfahren</LinkButton>
+      <LinkButton to="https://www.mip-consult.de/leistungen/compliance-datenschutz/datenschutz/" maxWidth="400px" bgColor="#B81135" color="#fff" external >Mehr zu Datenschutz erfahren</LinkButton>
     </div>
   </BlueBox>
 </div>

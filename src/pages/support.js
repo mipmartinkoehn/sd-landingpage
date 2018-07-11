@@ -1,7 +1,7 @@
 import React from 'react';
 import Whitebox from '../components/white-box/white-box.module';
 import Greybox from '../components/grey-box/grey-box.module';
-import BlueBox from '../components/blue-box/blue-box';
+import BlueBox from '../components/blue-box/blue-box.module';
 
 const Support = () => (
 <div>
@@ -28,7 +28,7 @@ const Support = () => (
   </Greybox>
   <BlueBox>
     <h2>Service</h2>
-    <p style={{color: '#fff'}}>
+    <p>
       Im Rahmen von Wartungsverträgen stellen wir Issue-Tracking-Systeme und Notfallrufnummern bereit, damit Sie unkompliziert Ihr Anliegen adressieren können. Wir beantworten Ihr Anliegen umgehend innerhalb der vereinbarten Reaktionszeiten.
       Der reibungslose Betrieb Ihrer Softwaresysteme hat für uns oberste Priorität.
     </p>

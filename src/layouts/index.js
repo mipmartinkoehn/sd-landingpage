@@ -4,13 +4,13 @@ import Helmet from 'react-helmet'
 import { withPrefix } from 'gatsby-link'
 import NavigationBar from '../components/navigation/navigation-bar.module'
 import Hero from '../components/hero/hero.module'
-import Footer from '../components/footer/footer'
+import Footer from '../components/footer/footer.module'
 import './index.css'
 
 function GetHero(props) {
   const location = props.location
   if (location.pathname === withPrefix('/')) {
-    return <Hero siteTitle={location.pathname} big={true} />
+    return <Hero siteTitle={location.pathname} big />
   }
   return <Hero siteTitle={location.pathname} />
 }

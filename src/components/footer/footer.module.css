@@ -1,0 +1,15 @@
+.footer {
+  background-color: #000;
+  height: 100px;
+}
+
+.ulStyle {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.imgStyle {
+  height: 55px;
+  margin-top: 20px;
+  margin-bottom: -15px;
+}
