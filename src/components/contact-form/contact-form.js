@@ -68,11 +68,11 @@ class ContactForm extends Component {
                     </p>
                     <p>
                         <label htmlFor="firm">Firma</label>
-                        <input type="text" name="firm" id="firm"/>
+                        <input type="text" name="firm" id="firm" onChange={this.handleChange}/>
                     </p>
                     <p>
                         <label htmlFor="phone">Telefon</label>
-                        <input type="text" name="phone" id="phone"/>
+                        <input type="text" name="phone" id="phone" onChange={this.handleChange}/>
                     </p>
                     <p className="full-width">
                         <label htmlFor="message">Ihre Nachricht an uns*</label>
