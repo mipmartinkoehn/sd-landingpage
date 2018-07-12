@@ -398,9 +398,9 @@ class DataProtection extends Component {
             Funktionseinschränkungen dieser Webseite führen kann. Sie können dem
             Einsatz von Cookies, die dem Website-Tracking und Werbezwecken
             dienen, über die Netzwerkwerbeinitiative
-            http://optout.networkadvertising.org/ oder die amerikanische
-            Webseite http://www.aboutads.info/choices oder die europäische
-            Webseite http://www.youronlinechoices.com/uk/your-ad-choices/
+            <a href="http://optout.networkadvertising.org/">http://optout.networkadvertising.org/</a> oder die amerikanische
+            Webseite <a href="http://www.aboutads.info/choices">http://www.aboutads.info/choices</a> oder die europäische
+            Webseite <a href="http://www.youronlinechoices.com/uk/your-ad-choices/">http://www.youronlinechoices.com/uk/your-ad-choices/</a>
             widersprechen.
           </p>
           <h2>11. Google Analytics</h2>
@@ -416,7 +416,7 @@ class DataProtection extends Component {
           <p>
             Google ist gemäß EU-US-Privacy-Shield-Abkommen zertifiziert und
             bietet hierdurch die Garantie europäisches Datenschutzrecht
-            einzuhalten (https://www.privacyshield.gov).
+            einzuhalten (<a href="https://www.privacyshield.gov">https://www.privacyshield.gov)</a>.
           </p>
           <p>
             Google wird diese Informationen in unserem Auftrag benutzen, um die
@@ -443,7 +443,7 @@ class DataProtection extends Component {
             Google sowie die Verarbeitung dieser Daten durch Google verhindern,
             indem sie das unter folgendem Link verfügbare Browser-Plugin
             herunterladen und installieren:
-            http://tools.google.com/dlpage/gaoptout?hl=de. Alternativ können Sie
+            <a href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>. Alternativ können Sie
             die Erfassung durch Google Analytics verhindern, indem Sie auf
             folgenden Link klicken. Es wird ein Opt-Out-Cookie gesetzt, das die
             zukünftige Erfassung Ihrer Daten beim Besuch dieser Website mit dem
@@ -454,7 +454,7 @@ class DataProtection extends Component {
           <p>
             Weitere Informationen zur Datenverarbeitung durch Google,
             Einstellungs- und Widerspruchsmöglichkeiten erhalten Sie auf den
-            Webseiten von Google unter https://www.google.de
+            Webseiten von Google unter <a href="https://www.google.de">https://www.google.de</a>
           </p>
           <h2>12. Weitere Services</h2>
           <p>
