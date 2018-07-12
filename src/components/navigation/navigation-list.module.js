@@ -8,9 +8,9 @@ class NavigationList extends React.Component {
     const { imgSrc, dark } = this.props;
     const menuEntries = [
       {title: "Kontakt", path:"/contact/"},
+      {title: "IT-Beratung", path:"/it-consulting/"},
       {title: "Projekte", path:"/projects/"},
       {title: "Support und Schulungen", path:"/support/"},
-      {title: "IT-Beratung", path:"/it-consulting/"},
       {title: "Softwareentwicklung", path:"/software-dev/"}
     ];
     const listItems = menuEntries.map( (navItem, i) =>
