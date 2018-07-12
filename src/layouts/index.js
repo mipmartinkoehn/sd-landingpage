@@ -5,6 +5,7 @@ import { withPrefix } from 'gatsby-link'
 import NavigationBar from '../components/navigation/navigation-bar.module'
 import Hero from '../components/hero/hero.module'
 import Footer from '../components/footer/footer.module'
+import favicon from '../images/favicon.ico';
 import './index.css'
 
 function GetHero(props) {
@@ -23,6 +24,9 @@ const Layout = ({ children, data, location }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
+      link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+    ]}
     />
     <NavigationBar />
     <GetHero location={location}/>
