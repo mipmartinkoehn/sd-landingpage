@@ -1,24 +1,28 @@
 .active {
-  border-bottom: 4px solid #00567a !important;
+  border-bottom: 4px solid #00567a;
 }
 
-.lightStyle {
-  height: 100px;
+.logoStyle {
+  width: 220px;
+  height: 42px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.header {
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1039;
-  text-align: center;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .darkStyle {
-  height: 75px;
   background-color: #fff;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1039;
-  text-align: center;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);

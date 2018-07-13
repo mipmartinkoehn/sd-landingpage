@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -25,14 +25,10 @@ module.exports = class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           {this.props.headComponents}
           {css}
-          <script src='https://www.google.com/recaptcha/api.js' />
-          
+          <script src="https://www.google.com/recaptcha/api.js" />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

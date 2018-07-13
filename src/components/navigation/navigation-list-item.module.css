@@ -1,12 +1,15 @@
 .liStyle {
-  display: inline;
-  padding: 10px;
-  float: right;
+  display: inline-block;
+  margin: 0;
 }
 
 .linkStyle {
   color: #fff;
   text-decoration: none;
+  line-height: 75px;
+  height: 75px;
+  display: block;
+  padding: 0 .4rem;
 }
 
 .linkStyleDark {

@@ -46,8 +46,7 @@ const styles = {
     zIndex: '10000',
     bottom: '0',
     margin: '1rem',
-    borderRadius: '15px'
-
+    borderRadius: '15px',
   },
   button: {
     position: 'absolut',
@@ -61,7 +60,6 @@ const styles = {
     fontWeight: '600',
     opacity: '1',
     bottom: '20px',
-
   },
   message: {
     display: 'block',
@@ -70,7 +68,7 @@ const styles = {
     color: 'white',
     lineHeight: '1.25rem',
     fontSize: '0.8rem',
-    fontWeight: '400'
+    fontWeight: '400',
   },
   link: {
     textDecoration: 'none',
@@ -78,24 +76,22 @@ const styles = {
     display: 'block',
     lineHeight: '20px',
     marginLeft: '0',
-    marginTop: '1rem'
+    marginTop: '1rem',
   },
 }
 
 const message =
-  "Um die Webseite optimal gestalten und fortlaufend verbessern zu können, verwendet die mip Consult GmbH Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu."
-
+  'Um die Webseite optimal gestalten und fortlaufend verbessern zu können, verwendet die mip Consult GmbH Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.'
 
 class Layout extends React.Component {
   constructor(props) {
-    super(props);
-
-    this.state = {};
+    super(props)
+    this.state = {}
   }
-  
+
   render() {
-   const { children, data, location } = this.props;
-   return (
+    const { children, data, location } = this.props
+    return (
       <div>
         <Helmet
           title={data.site.siteMetadata.title}
@@ -104,7 +100,10 @@ class Layout extends React.Component {
             { name: 'keywords', content: 'sample, something' },
             { name: 'msapplication-TileColor', content: '#FFFFFF' },
             { name: 'msapplication-TileImage', content: `${mstile144x144}` },
-            { name: 'msapplication-square70x70logo', content: `${mstile70x70}` },
+            {
+              name: 'msapplication-square70x70logo',
+              content: `${mstile70x70}`,
+            },
             {
               name: 'msapplication-square150x150logo',
               content: `${mstile150x150}`,
@@ -113,7 +112,10 @@ class Layout extends React.Component {
               name: 'msapplication-square310x310logo',
               content: `${mstile310x310}`,
             },
-            { name: 'msapplication-wide310x150logo', content: `${mstile310x150}` },
+            {
+              name: 'msapplication-wide310x150logo',
+              content: `${mstile310x150}`,
+            },
           ]}
           link={[
             {
@@ -197,25 +199,24 @@ class Layout extends React.Component {
             { rel: 'icon', type: 'image/png', href: `${favicon}` },
           ]}
         />
-
         <NavigationBar />
         <GetHero location={location} />
-        <div>{children()}</div>
+        {children()}
         <Footer />
-          <CookieBanner
-            styles={styles}
-            message={message}
-            link={
-              <a href="https://www.individualsoftware-berlin.de/data-protection/">
-                Weitere Informationen
-              </a>
-            }
-            buttonMessage="Akzeptieren"
-            dismissOnScroll={false}
-            dismissOnClick={false}
-            onAccept={() => this.setState({ accepted: true })}
-            cookie="user-has-accepted-cookies"
-          />
+        <CookieBanner
+          styles={styles}
+          message={message}
+          link={
+            <a href="https://www.individualsoftware-berlin.de/data-protection/">
+              Weitere Informationen
+            </a>
+          }
+          buttonMessage="Akzeptieren"
+          dismissOnScroll={false}
+          dismissOnClick={false}
+          onAccept={() => this.setState({ accepted: true })}
+          cookie="user-has-accepted-cookies"
+        />
       </div>
     )
   }

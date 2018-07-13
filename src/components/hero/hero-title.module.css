@@ -2,5 +2,16 @@
   text-align: center;
   color: #fff;
   margin: 0;
-  max-width: 960px;
+}
+
+@media (min-width: 576px) {
+  .header {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    max-width: 100%;
+  }
 }
