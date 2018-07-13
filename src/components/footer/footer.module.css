@@ -3,6 +3,11 @@
   height: 100px;
 }
 
+.menuContainer {
+  float: right;
+  margin-top: 2.2rem;
+}
+
 .ulStyle {
   list-style-type: none;
   margin: 0 auto;
@@ -12,4 +17,13 @@
   height: 55px;
   margin-top: 20px;
   margin-bottom: -15px;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    height: 100%;
+  }
+  .menuContainer {
+    float: none;
+  }
 }

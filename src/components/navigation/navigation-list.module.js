@@ -4,7 +4,7 @@ import styles from './navigation-list.module.css'
 
 class NavigationList extends React.Component {
   render() {
-    const { dark } = this.props
+    const { dark, className } = this.props
     const menuEntries = [
       { title: 'Softwareentwicklung', path: '/software-dev/' },
       { title: 'Support und Schulungen', path: '/support/' },
@@ -22,7 +22,7 @@ class NavigationList extends React.Component {
     ))
 
     return (
-      <nav>
+      <nav className={className}>
         <ul className={styles.ulStyle}>{listItems}</ul>
       </nav>
     )

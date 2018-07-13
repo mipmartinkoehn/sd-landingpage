@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import msLight from '../../images/whitemip-software-logo.svg'
 import msDark from '../../images/mip-software-logo.svg'
 import NavigationList from './navigation-list.module'
+import ResponsiveNav from './responsive-nav.module'
 import styles from './navigation-bar.module.css'
 
 let lastScrollY = 0
@@ -59,7 +60,8 @@ class NavigationBar extends React.Component {
           className={styles.logoStyle}
           style={{ backgroundImage: `url(${this.state.imgSrc})` }}
         />
-        <NavigationList dark={this.state.isDark} />
+        <NavigationList dark={this.state.isDark} className={styles.nav} />
+        <ResponsiveNav dark={this.state.isDark} className={styles.respNav} />
       </div>
     )
   }

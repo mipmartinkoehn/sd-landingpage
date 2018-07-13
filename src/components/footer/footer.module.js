@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import mipLogo from '../../images/mip-logo_weiß.png'
 import styles from './footer.module.css'
-import FooterLink from './footer-link.module';
+import FooterLink from './footer-link.module'
 
 class Footer extends Component {
   render() {
@@ -9,10 +9,13 @@ class Footer extends Component {
       <div className={styles.footer}>
         <div className="center-mode">
           <img src={mipLogo} className={styles.imgStyle} />
-          <div style={{ float: 'right', marginTop: '2.2rem' }}>
+          <div className={styles.menuContainer}>
             <ul className={styles.ulStyle}>
               <FooterLink href="/impressum/" label="Impressum" />
-              <FooterLink href="/data-protection/" label="Datenschutzerklärung" />
+              <FooterLink
+                href="/data-protection/"
+                label="Datenschutzerklärung"
+              />
               <FooterLink href="/contact/" label="Kontakt" />
             </ul>
           </div>
