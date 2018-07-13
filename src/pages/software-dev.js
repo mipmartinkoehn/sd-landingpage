@@ -7,6 +7,7 @@ import Whitebox from '../components/white-box/white-box.module'
 import CodeWhite from '../images/code-icon_weiß.png'
 import RocketWhite from '../images/raketen-icon_weiß.png'
 import ConceptWhite from '../images/konzept-icon_weiß.png'
+import ConceptFunny from '../images/concept_funny.svg';
 import MagnifierWhite from '../images/lupe-icon_weiß.png'
 import IconBall from '../components/icon-ball/icon-ball'
 import Golang from '../images/golang-blue.svg'
@@ -16,6 +17,7 @@ import NodeJs from '../images/nodejs.png'
 import Firebase from '../images/firebase-logo.svg'
 import Loopback from '../images/loopback-logo.png'
 import Docker from '../images/docker_vertical.png'
+import TwoThirdBox from '../components/two-third-box/two-third-box.module';
 
 const SoftwareDev = () => (
   <div>
@@ -64,6 +66,59 @@ const SoftwareDev = () => (
           </IconBall>
         </div>
       </div>
+      <br />
+      <TwoThirdBox textpos={'left'} imgSrc={ConceptFunny}>
+          <h3>Konzept</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
+          euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
+          leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
+          lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
+          tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
+          cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
+          convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
+          habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
+          sapien eget mi proin. Nisl tincidunt eget nullam non nisi.</p>
+      </TwoThirdBox>
+      <TwoThirdBox textpos={'right'} imgSrc={ConceptFunny}>
+          <h3>Entwicklung</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
+          euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
+          leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
+          lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
+          tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
+          cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
+          convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
+          habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
+          sapien eget mi proin. Nisl tincidunt eget nullam non nisi.</p>
+      </TwoThirdBox>
+      <TwoThirdBox textpos={'left'} imgSrc={ConceptFunny}>
+          <h3>Testen</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
+          euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
+          leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
+          lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
+          tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
+          cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
+          convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
+          habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
+          sapien eget mi proin. Nisl tincidunt eget nullam non nisi.</p>
+      </TwoThirdBox>
+      <TwoThirdBox textpos={'right'} imgSrc={ConceptFunny}>
+          <h3>Veröffentlichen</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
+          euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
+          leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
+          lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
+          tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
+          cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
+          convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
+          habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
+          sapien eget mi proin. Nisl tincidunt eget nullam non nisi.</p>
+      </TwoThirdBox>
     </Whitebox>
     <Greybox>
       <h2>Web-Anwendungen</h2>
