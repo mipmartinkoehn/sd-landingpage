@@ -32,6 +32,7 @@ module.exports = class HTML extends React.Component {
           {this.props.headComponents}
           {css}
           <script src='https://www.google.com/recaptcha/api.js' />
+          
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
