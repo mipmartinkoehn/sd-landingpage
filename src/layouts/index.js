@@ -206,7 +206,7 @@ class Layout extends React.Component {
             styles={styles}
             message={message}
             link={
-              <a href="http://nocookielaw.com/">
+              <a href="https://www.individualsoftware-berlin.de/data-protection/">
                 Weitere Informationen
               </a>
             }
