@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'mip Software - Individualsoftware aus Berlin',
+    siteUrl: `https://www.individualsoftware-berlin.de`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,5 +19,8 @@ module.exports = {
         includeInDevelopment: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`
+    }
   ],
 }
