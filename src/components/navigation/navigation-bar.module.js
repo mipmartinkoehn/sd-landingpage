@@ -15,6 +15,13 @@ class NavigationBar extends React.Component {
     this.state = { imgSrc: msLight, isDark: false }
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.state.isDark !== nextState.isDark) {
+      return true;
+    }
+    return false;
+  }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll)
   }
