@@ -1,17 +1,28 @@
-.header {
-  text-align: center;
+.heroTextContainer {
+  max-width: 50%;
+}
+
+.title {
   color: #fff;
   margin: 0;
 }
 
+.subTitle {
+  color: #fff;
+  margin: 0;
+  font-weight: 200;
+}
+
 @media (min-width: 576px) {
-  .header {
+  .header,
+  .subTitle {
     max-width: 960px;
   }
 }
 
 @media (max-width: 576px) {
-  .header {
+  .header,
+  .subTitle {
     max-width: 100%;
   }
 }

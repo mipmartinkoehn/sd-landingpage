@@ -3,21 +3,20 @@ import { withPrefix } from 'gatsby-link'
 import styles from './hero-title.module.css'
 
 class HeroTitle extends React.Component {
-  getTitle() {
+  getTitle(location) {
     let title = ''
-    let location = this.props.location;
-    if (location.charAt(location.length-1) !== '/') {
-      location += '/';
+    // let location = this.props.location;
+    if (location.charAt(location.length - 1) !== '/') {
+      location += '/'
     }
     switch (location) {
       case withPrefix('/'):
-        title =
-          'INDIVIDUALSOFTWARE: SMARTE KONZEPTE. ZUVERLÄSSIGE UMSETZUNG!'
+        title = 'INDIVIDUALSOFTWARE:'
         break
       case withPrefix('/software-dev/'):
         title = 'Softwareentwicklung'
         break
-      case withPrefix('/it-consulting/'):
+      case withPrefix('/it-beratung/'):
         title = 'IT-Beratung'
         break
       case withPrefix('/support/'):
@@ -56,8 +55,34 @@ class HeroTitle extends React.Component {
     return title
   }
 
+  getSubTitle(location) {
+    let title = ''
+    // let location = this.props.location;
+    if (location.charAt(location.length - 1) !== '/') {
+      location += '/'
+    }
+    switch (location) {
+      case withPrefix('/'):
+        title = 'MARKTVORTEIL IN DER DIGITALEN TRANSFORMATION'
+        break
+      case withPrefix('/software-dev/'):
+        title = 'Moderne Ansätze für individuelle Lösungen'
+        break
+      default:
+        title = ''
+        break
+    }
+    return title
+  }
+
   render() {
-    return <h1 className={styles.header}>{this.getTitle()}</h1>
+    const { location } = this.props
+    return (
+      <div className={styles.heroTextContainer}>
+        <h1 className={styles.title}>{this.getTitle(location)}</h1>
+        <h2 className={styles.subTitle}>{this.getSubTitle(location)}</h2>
+      </div>
+    )
   }
 }
 

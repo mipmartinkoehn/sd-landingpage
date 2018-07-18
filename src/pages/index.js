@@ -14,7 +14,7 @@ import LinkButton from '../components/link-button/link-button.module'
 const IndexPage = () => (
   <div style={{ textAlign: 'center' }}>
     <Whitebox>
-      <h2>Software - Angepasst und inovativ</h2>
+      <h2>Software - Angepasst und innovativ</h2>
       <p>
         Individualsoftware kommt überall dort zum Einsatz, wo Standardlösungen
         die individuelle Problemstellung verfehlt. Die Realisierung moderner
