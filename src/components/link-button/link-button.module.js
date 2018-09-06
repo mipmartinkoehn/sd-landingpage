@@ -7,7 +7,7 @@ class LinkButton extends Component {
     render() {
         const { to, maxWidth, bgColor, color, external } = this.props;
         const additionalStyles = {
-            background: bgColor, //#B81135,
+            background: bgColor, // #B81135,
             maxWidth: maxWidth,
             color: color
         };

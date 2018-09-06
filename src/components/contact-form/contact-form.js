@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { navigateTo } from 'gatsby-link'
 import './contact-form.css'
-import Recaptcha from 'react-google-recaptcha'
+import ReCAPTCHA from 'react-google-recaptcha'
 import '../form/forms.css'
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
@@ -12,10 +12,13 @@ const encode = data => {
     .join('&')
 }
 
+
+
 class ContactForm extends Component {
   constructor(props) {
     super(props)
     this.state = {}
+    this._reCaptchaRef = React.createRef();
   }
 
   handleChange = e => {
@@ -28,7 +31,6 @@ class ContactForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    console.log(this.state)
     if (!this.state['g-recaptcha-response']) {
       alert('recaptcha nicht bestätigt')
       return
@@ -109,8 +111,8 @@ class ContactForm extends Component {
               onChange={this.handleChange}
             />
           </p>
-          <Recaptcha
-            ref={"recaptcha"}
+          <ReCAPTCHA
+            ref={this._reCaptchaRef}
             sitekey={RECAPTCHA_KEY}
             onChange={this.handleRecaptcha}
           />

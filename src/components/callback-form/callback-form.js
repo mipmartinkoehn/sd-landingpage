@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { navigateTo } from 'gatsby-link';
 import './callback-form.css';
-import Recaptcha from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 import '../form/forms.css';
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
@@ -10,24 +10,24 @@ const encode = (data) => {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
         .join("&");
-  }
-
+}
 
 class CallbackForm extends Component {
     constructor(props) {
         super(props);
-        this.state = { };
+        this.state = {};
+        this._reCaptchaRef = React.createRef();
     }
 
     handleChange = e => {
         this.setState({ [e.target.name]: e.target.value });
-      };
-    
-      handleRecaptcha = value => {
+    };
+
+    handleRecaptcha = value => {
         this.setState({ "g-recaptcha-response": value });
-      };
-    
-      handleSubmit = e => {
+    };
+
+    handleSubmit = e => {
         e.preventDefault();
         if (!this.state['g-recaptcha-response']) {
             alert('recaptcha nicht bestätigt')
@@ -35,16 +35,16 @@ class CallbackForm extends Component {
         }
         const form = e.target;
         fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({
-            "form-name": form.getAttribute("name"),
-            ...this.state
-          })
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({
+                "form-name": form.getAttribute("name"),
+                ...this.state
+            })
         })
-          .then(() => navigateTo(form.getAttribute("action")))
-          .catch(error => alert(error));
-      };
+            .then(() => navigateTo(form.getAttribute("action")))
+            .catch(error => alert(error));
+    };
 
     render() {
         return (
@@ -69,15 +69,15 @@ class CallbackForm extends Component {
                     </p>
                     <p>
                         <label htmlFor="phone">Telefon*</label>
-                        <input type="text" name="phone" id="phone" required onChange={this.handleChange}/>
+                        <input type="text" name="phone" id="phone" required onChange={this.handleChange} />
                     </p>
                     <p className="full-width">
                         <label htmlFor="message">Ihre Nachricht an uns</label>
                         <textarea name="message" id="message" rows="12" onChange={this.handleChange} />
-                        
+
                     </p>
-                    <Recaptcha
-                        ref="recaptcha"
+                    <ReCAPTCHA
+                        ref={this._reCaptchaRef}
                         sitekey={RECAPTCHA_KEY}
                         onChange={this.handleRecaptcha}
                     />

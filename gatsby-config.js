@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: 'mip Software - Individualsoftware aus Berlin',
-    siteUrl: `https://www.individualsoftware-berlin.de`,
+    title: "mip Software - Individualsoftware aus Berlin",
+    siteUrl: "https://www.individualsoftware-berlin.de",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    `gatsby-plugin-react-next`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-react-next",
     {
       resolve: "gatsby-plugin-no-sourcemaps",
     },
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-PW3H6M3",
   
@@ -20,7 +20,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`
+      resolve: "gatsby-plugin-sitemap"
     }
   ],
 }
