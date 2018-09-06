@@ -4,12 +4,6 @@ import Greybox from '../components/grey-box/grey-box.module'
 import BlueBox from '../components/blue-box/blue-box.module'
 import Whitebox from '../components/white-box/white-box.module'
 
-import CodeWhite from '../images/code-icon_weiß.png'
-import RocketWhite from '../images/raketen-icon_weiß.png'
-import ConceptWhite from '../images/konzept-icon_weiß.png'
-import ConceptFunny from '../images/concept_funny.svg';
-import MagnifierWhite from '../images/lupe-icon_weiß.png'
-import IconBall from '../components/icon-ball/icon-ball'
 import Golang from '../images/golang-blue.svg'
 import Angular from '../images/angular.svg'
 import MongoDB from '../images/mongodb.png'
@@ -17,129 +11,53 @@ import NodeJs from '../images/nodejs.png'
 import Firebase from '../images/firebase-logo.svg'
 import Loopback from '../images/loopback-logo.png'
 import Docker from '../images/docker_vertical.png'
-import TwoThirdBox from '../components/two-third-box/two-third-box.module';
 
 const SoftwareDev = () => (
   <div>
     <Whitebox>
       <h2>Vorgehen</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
-        euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
-        leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
-        lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
-        tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
-        cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
-        convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
-        habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
-        sapien eget mi proin. Nisl tincidunt eget nullam non nisi. Vulputate
-        odio ut enim blandit volutpat. Viverra tellus in hac habitasse platea
-        dictumst vestibulum rhoncus. Leo integer malesuada nunc vel risus
-        commodo viverra maecenas accumsan.
+        Bei der mip arbeiten wir mit verschienden Vorgehensmodellen. Das jeweilige Vorgehensmodell strukturiert ein Projekt, 
+        um die komplexität eines Projektes überschaubar zu halten. Dadurch wird ein Projekt erst planbar und vorgegebne Budgets und Laufzeiten können eingehalten werden.
+        Dabei arbeiten wir mit 2 grundsätzlichen Vorgehensmodellen.
+        Zum einen mit agilen Vorgehnsmodellen wie SCRUM oder Kanban, oder anderen Falls mit einer Mischform auf klassischen (Wasserfall, V-Modell) und agilen Methoden.
+        Welche Methode die richtige ist, hängt stark vom jeweiligen Projekt ab.
       </p>
-      <br />
-      <div style={{ textAlign: 'center' }}>
-        <div style={{ display: 'inline-block' }}>
-          <IconBall bgColor="#13597C" color="#fff" imgSrc={ConceptWhite}>
-            Konzept
-          </IconBall>
-        </div>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <div style={{ display: 'inline-block' }}>
-          <IconBall bgColor="#13597C" color="#fff" imgSrc={RocketWhite}>
-            Veröffentlichen
-          </IconBall>
-        </div>
-        <div style={{ display: 'inline-block', width: '12.5rem' }} />
-        <div style={{ display: 'inline-block' }}>
-          <IconBall bgColor="#13597C" color="#fff" imgSrc={CodeWhite}>
-            Entwicklung
-          </IconBall>
-        </div>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <div style={{ display: 'inline-block' }}>
-          <IconBall bgColor="#13597C" color="#fff" imgSrc={MagnifierWhite}>
-            Testen
-          </IconBall>
-        </div>
-      </div>
-      <br />
-      <TwoThirdBox textpos={'left'} imgSrc={ConceptFunny}>
-          <h3>Konzept</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
-          euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
-          leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
-          lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
-          tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
-          cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
-          convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
-          habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
-          sapien eget mi proin. Nisl tincidunt eget nullam non nisi.</p>
-      </TwoThirdBox>
-      <TwoThirdBox textpos={'right'} imgSrc={ConceptFunny}>
-          <h3>Entwicklung</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
-          euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
-          leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
-          lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
-          tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
-          cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
-          convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
-          habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
-          sapien eget mi proin. Nisl tincidunt eget nullam non nisi.</p>
-      </TwoThirdBox>
-      <TwoThirdBox textpos={'left'} imgSrc={ConceptFunny}>
-          <h3>Testen</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
-          euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
-          leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
-          lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
-          tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
-          cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
-          convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
-          habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
-          sapien eget mi proin. Nisl tincidunt eget nullam non nisi.</p>
-      </TwoThirdBox>
-      <TwoThirdBox textpos={'right'} imgSrc={ConceptFunny}>
-          <h3>Veröffentlichen</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
-          euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
-          leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
-          lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
-          tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
-          cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
-          convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
-          habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
-          sapien eget mi proin. Nisl tincidunt eget nullam non nisi.</p>
-      </TwoThirdBox>
+      <h3>Agile Vorgehensmodelle</h3>
+      <p>
+        Die Entstehung von Software ist ein kreativer Prozess bei dem es häufig zu Änderungen bei Marktanforderungen,
+        beteilgter Personen oder dem technischen Umfeld kommen kann. Aus diesem Grund eigenen sich Agile Vorgehensmodelle in den meisten
+        Fällen besser als klassische Ansätze für Software Entwicklung.<br/>
+        Die Projekte laufen so ab, dass Spezifikation, Entwicklung, Testen und Veröffentlichen der Software ein sich immer wiederholender Prozess ist.
+        Nach jedem Zyklus erhält man eine lauffähige Version der Software, die der Kunde dann bewerten kann. Dadurch hat der Kunde die Möglichkeit zeitnah
+        Feedback zu geben um damit wiederum direkt Einfluss auf die weitere Entwicklung zu nehmen.
+      </p>
+      <p>Bei der mip verwenden wir in den meisten Fällen Scrum, Kanban oder eine Kombination aus beiden Ansätzen als agile Methode.</p>
+
+      <h3>Kombination klassischer und agiler Methoden</h3>
+      <p>
+        Neben dem Agilen Vorgehensmodell hat sich die Anwendung von Mischformen aus einem klassischen und
+        agilen Vorgehensmodell als sehr erfolgreich erwiesen. Aus unserer Erfahrung kann es sinnvoll sein, nach einem klassischer Vorgehensmodell vorzugehen,
+        dieses aber mit Methoden und Techniken aus der agilen Softwareentwicklung zu verbinden.
+      </p>
     </Whitebox>
     <Greybox>
       <h2>Web-Anwendungen</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Erat imperdiet sed
-        euismod nisi porta lorem mollis. Non enim praesent elementum facilisis
-        leo vel fringilla. Quisque non tellus orci ac auctor. Turpis nunc eget
-        lorem dolor sed viverra ipsum nunc aliquet. Amet facilisis magna etiam
-        tempor. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet
-        cursus sit amet dictum sit amet justo. Erat nam at lectus urna duis
-        convallis. Ultricies tristique nulla aliquet enim tortor. Cursus in hac
-        habitasse platea dictumst quisque sagittis purus sit. Ultrices dui
-        sapien eget mi proin. Nisl tincidunt eget nullam non nisi. Vulputate
-        odio ut enim blandit volutpat. Viverra tellus in hac habitasse platea
-        dictumst vestibulum rhoncus. Leo integer malesuada nunc vel risus
-        commodo viverra maecenas accumsan.
+        Die Entwicklung von Webanwendungen umfasst im allgmeinen das Erarbeiten und Dokumentatieren der Anforderungen, 
+        UX/UI-Design, die Programmierung, das Testen und natürlich den Betrieb der Anwendung.<br/>
+        Wir haben uns als mip auf die Entwicklung von Web-Anwendungen spezialisiert und in diesem Bereich umfangreiche Erfahrung und Wissen 
+        mit verschiedenen Technologien aufgebaut.</p>
+        <p>Zu Web-Anwendungen zählen nicht nur Webseiten, sondern auch Intranet-Anwendungen in Unternehmen (z.B. Anwendungen zur Buchaltung, Kundenbetreuung etc.). 
+        Im Prinzip handelt es sich um alle Anwendungen die auf dem Client-Server-Modell aufbauen.
+        Webanwendungen haben den Vorteil, dass diese nicht lokal auf den Geräten der Nutzer 
+        installiert werden müssen, sondern lediglich ein Gerät mit einem Browser benötigt wird. Das kann sowohl ein normaler Desktop-PC sein, aber 
+        auch Tablets oder Mobiltelefone eigenen sich zum Ausführen von Web-Anwendungen.<br/>
+        Im mip Software Team finden sich alle Kompetenzen wieder die Sie für die Entwicklung einer Web-Anwendung benötigen.
       </p>
     </Greybox>
     <BlueBox>
-      <h2>Migration von alten Systemen</h2>
+      <h2>Alte Anwendungen auf aktuelle Technologien migrieren</h2>
       <p>
         Heute ändern sich die Anforderungen an Software schneller als je zuvor.
         Dies erfordert eine der heutigen Zeit angemessene Architektur, die die
@@ -148,7 +66,7 @@ const SoftwareDev = () => (
       </p>
       <p>
         Ungewollte Abhängigkeiten, die im Laufe der Zeit gewachsen sind, lassen
-        die Architektur wie einen "Big Ball of Mud (BBoM)" aussehen. Solche
+        die Architektur sehr unübersichtlich aussehen. Solche
         Monolithen weisen eine stark erhöhte Komplexität auf. Dies verringert
         die Produktivität aufgrund von Koordinierungsaufwänden zwischen
         verschiedenen Teams, komplizierte Releases und schlechte Wartbarkeit.
@@ -174,16 +92,16 @@ const SoftwareDev = () => (
       </ul>
       <p>
         Von den alten monolitischen System hin zu einer agilen
-        Microservice-Architektur zu wechseln ist kein Prozess, der über Nacht
+        Microservice-Architektur zu wechseln ist kein Prozess der über Nacht
         abläuft. Man muss genau abwägen wann und welche Teile der bisherigen
-        Archtiktur in kleinere Applikationen (Microservices) aufgesplittet
+        Archtiktur in kleinere Applikationen (Microservices) aufgeteilt
         werden können und wie diese wieder in die Gesamtarchitektur integriert
         werden.
       </p>
       <p>
         Eine neue Architektur bringt auch andere Seiteneffekte mit sich, die bei
         einer Umstellung zu betrachten sind. Folgende Fragestellungen tauchen
-        dabei immer wieder auf:{' '}
+        dabei immer wieder auf:
       </p>
       <ul>
         <li>Wie werden Microservice deployed?</li>

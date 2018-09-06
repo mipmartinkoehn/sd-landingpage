@@ -110,7 +110,7 @@ class ContactForm extends Component {
             />
           </p>
           <Recaptcha
-            ref="recaptcha"
+            ref={"recaptcha"}
             sitekey={RECAPTCHA_KEY}
             onChange={this.handleRecaptcha}
           />

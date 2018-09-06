@@ -20,8 +20,7 @@ const IndexPage = () => (
         die individuelle Problemstellung verfehlt. Die Realisierung moderner
         Weblösungen gehört genauso zu unserer Engagement, wie die konstruktive
         Zusammenarbeit mit unseren Kundinnen und Kunden. Dabei begleiten wir Sie
-        von der ersten Idee über die Konzeption bis hin zur Umsetzung. Auch
-        danach stehen wir an Ihrer Seite und bieten Support und Schulungen.
+        von der ersten Idee über die Konzeption bis hin zur Umsetzung. Auch nach der Umsetzung stehen wir an Ihrer Seite und bieten Ihnen und Ihren Mitarbeitern maßgeschneiderten Support und Schulungen.
       </p>
 
       <br />
@@ -131,7 +130,7 @@ const IndexPage = () => (
         möglich einen Hybridansatz in betracht zu ziehen. Viele
         Standardanwendungen bieten heute ein breites Spektrum an{' '}
         <strong>Schnittstellen (API's)</strong> mit denen dritte Anwendungen
-        kommunizieren können. Dadurch kann man die Standardlösungen durch eine
+        kommunizieren können. Dadurch kann man Standardlösungen durch eine
         Individuallösung erweitern und die Vorteile aus beiden Welten nutzen.
       </p>
     </Greybox>

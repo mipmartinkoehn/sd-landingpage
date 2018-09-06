@@ -16,7 +16,7 @@ class HeroTitle extends React.Component {
       case withPrefix('/software-dev/'):
         title = 'Softwareentwicklung'
         break
-      case withPrefix('/it-beratung/'):
+      case withPrefix('/it-consulting/'):
         title = 'IT-Beratung'
         break
       case withPrefix('/support/'):

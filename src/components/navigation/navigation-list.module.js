@@ -8,7 +8,7 @@ class NavigationList extends React.Component {
     const menuEntries = [
       { title: 'Softwareentwicklung', path: '/software-dev/' },
       { title: 'Support und Schulungen', path: '/support/' },
-      { title: 'Projekte', path: '/projects/' },
+      // { title: 'Projekte', path: '/projects/' },
       { title: 'IT-Beratung', path: '/it-consulting/' },
       { title: 'Kontakt', path: '/contact/' },
     ]
