@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroTitle from './hero-title.module'
+import HeroImage from './hero-image.module'
 import styles from './hero.module.css'
 
 const SVGBackground = () => {
@@ -36,11 +37,11 @@ class Hero extends React.Component {
     return (
       <div className={styles.headerStyle} style={{ height: height }}>
         <SVGBackground />
-        <div>
+        <div className={styles.heroPart}>
           <HeroTitle location={siteTitle} />
         </div>
-        <div>
-
+        <div className={styles.heroPart}>
+          <HeroImage location={siteTitle} />
         </div>        
       </div>
     )
