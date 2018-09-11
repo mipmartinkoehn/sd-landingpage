@@ -40,7 +40,7 @@ class Hero extends React.Component {
         <div className={styles.heroPart}>
           <HeroTitle location={siteTitle} />
         </div>
-        <div className={styles.heroPart}>
+        <div className={styles.heroPartImage}>
           <HeroImage location={siteTitle} />
         </div>        
       </div>

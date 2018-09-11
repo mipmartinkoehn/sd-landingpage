@@ -24,3 +24,8 @@
 .heroPart {
   width: 50%;
 }
+
+.heroPartImage {
+  width: 50%;
+  height: 100%;
+}
