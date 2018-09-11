@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { navigateTo } from 'gatsby-link'
+import Link, { navigateTo } from 'gatsby-link'
 import './contact-form.css'
 import ReCAPTCHA from 'react-google-recaptcha'
 import '../form/forms.css'
+import PrettyCheckbox from 'pretty-checkbox'
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
 
@@ -12,13 +13,11 @@ const encode = data => {
     .join('&')
 }
 
-
-
 class ContactForm extends Component {
   constructor(props) {
     super(props)
     this.state = {}
-    this._reCaptchaRef = React.createRef();
+    this._reCaptchaRef = React.createRef()
   }
 
   handleChange = e => {
@@ -111,6 +110,31 @@ class ContactForm extends Component {
               onChange={this.handleChange}
             />
           </p>
+          <div className="full-width">
+            <div className="pretty p-default p-curve">
+              <input
+                type="checkbox"
+                name="dataprotection"
+                id="dataprotection"
+                onChange={this.handleChange}
+                required
+              />
+              <div className="state">
+                <label>
+                  Ich habe die{' '}
+                  <Link
+                    to="/data-protection/"
+                    activeStyle={{
+                      color: 'red',
+                    }}
+                  >
+                    Datenschutzerklärung
+                  </Link>{' '}
+                  der mip Consult GmbH zur Kenntnis genommen.
+                </label>
+              </div>
+            </div>
+          </div>
           <ReCAPTCHA
             ref={this._reCaptchaRef}
             sitekey={RECAPTCHA_KEY}

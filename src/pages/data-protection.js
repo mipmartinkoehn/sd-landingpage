@@ -448,8 +448,8 @@ class DataProtection extends Component {
             folgenden Link klicken. Es wird ein Opt-Out-Cookie gesetzt, das die
             zukünftige Erfassung Ihrer Daten beim Besuch dieser Website mit dem
             aktuell von Ihnen verwendeten Gerät (d.h. auf dem Gerät wo das Opt
-            Out Cookie gesetzt wurde)verhindert: <a href="#" id="ga-opt-out">Hier klicken, um das Opt-Out
-            Cookie für Google Analytics zu setzen.</a>
+            Out Cookie gesetzt wurde)verhindert: Hier klicken, um das Opt-Out
+            Cookie für Google Analytics zu setzen.
           </p>
           <p>
             Weitere Informationen zur Datenverarbeitung durch Google,

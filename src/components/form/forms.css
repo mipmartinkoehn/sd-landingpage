@@ -1,8 +1,8 @@
 .was-validated .form-control:valid ~ .invalid-feedback {
-    display: none;
-  }
+  display: none;
+}
 
-  .invalid-feedback {
-    color: red;
-  }
+.invalid-feedback {
+  color: red;
+}
   
