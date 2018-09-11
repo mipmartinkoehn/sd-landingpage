@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { navigateTo } from 'gatsby-link'
+import Link, { navigateTo } from 'gatsby-link'
 import './contact-form.css'
 import ReCAPTCHA from 'react-google-recaptcha'
 import '../form/forms.css'
@@ -12,13 +12,11 @@ const encode = data => {
     .join('&')
 }
 
-
-
 class ContactForm extends Component {
   constructor(props) {
     super(props)
     this.state = {}
-    this._reCaptchaRef = React.createRef();
+    this._reCaptchaRef = React.createRef()
   }
 
   handleChange = e => {
@@ -111,6 +109,26 @@ class ContactForm extends Component {
               onChange={this.handleChange}
             />
           </p>
+          <label className="control control-checkbox full-width">
+            Ich habe die{' '}
+            <Link
+              to="/data-protection/"
+              activeStyle={{
+                color: 'red',
+              }}
+            >
+              Datenschutzerklärung
+            </Link>{' '}
+            der mip Consult GmbH zur Kenntnis genommen.
+            <input
+              type="checkbox"
+              name="dataprotection"
+              id="dataprotection"
+              onChange={this.handleChange}
+              required
+            />
+            <div className="control_indicator" />
+          </label>
           <ReCAPTCHA
             ref={this._reCaptchaRef}
             sitekey={RECAPTCHA_KEY}
