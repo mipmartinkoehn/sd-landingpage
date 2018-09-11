@@ -68,12 +68,6 @@ class HeroTitle extends React.Component {
       case withPrefix('/software-dev/'):
         title = 'Moderne Ansätze für individuelle Lösungen'
         break
-      case withPrefix('/support/'):
-        title = 'Schnelle Unterstützung auch nach der Software Einführung'
-        break
-      case withPrefix('/it-consulting/'):
-        title = 'Finden Sie die richtige Lösung in einem unserer Workshops'
-        break
       default:
         title = ''
         break
