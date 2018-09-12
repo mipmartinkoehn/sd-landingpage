@@ -168,15 +168,7 @@ const IndexPage = () => (
           display: 'flex',
           justifyContent: 'space-around',
         }}
-      >
-        <LinkButton
-          to="/projects/"
-          maxWidth="300px"
-          bgColor="#B81135"
-          color="#fff"
-        >
-          ProjektBEISPIELE
-        </LinkButton>
+      >        
         <LinkButton
           to="/software-dev/"
           maxWidth="300px"
