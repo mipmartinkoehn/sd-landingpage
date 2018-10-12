@@ -15,15 +15,6 @@ const IndexPage = () => (
   <div style={{ textAlign: 'center' }}>
     <Whitebox>
       <h2>Software - Angepasst und innovativ</h2>
-      <p>
-        Individualsoftware kommt überall dort zum Einsatz, wo Standardlösungen
-        die individuelle Problemstellung verfehlt. Die Realisierung moderner
-        Weblösungen gehört genauso zu unserer Engagement, wie die konstruktive
-        Zusammenarbeit mit unseren Kundinnen und Kunden. Dabei begleiten wir Sie
-        von der ersten Idee über die Konzeption bis hin zur Umsetzung. Auch nach der Umsetzung stehen wir an Ihrer Seite und bieten Ihnen und Ihren Mitarbeitern maßgeschneiderten Support und Schulungen.
-      </p>
-
-      <br />
       <CardFlexGroup>
         <IconCard imgSrc={ConceptIcon}>
           <IconCardHeader>
@@ -60,8 +51,13 @@ const IndexPage = () => (
           </IconCardContent>
         </IconCard>
       </CardFlexGroup>
-      <br />
-      <br />
+      <p>
+        Individualsoftware kommt überall dort zum Einsatz, wo Standardlösungen
+        die individuelle Problemstellung verfehlt. Die Realisierung moderner
+        Weblösungen gehört genauso zu unserer Engagement, wie die konstruktive
+        Zusammenarbeit mit unseren Kundinnen und Kunden. Dabei begleiten wir Sie
+        von der ersten Idee über die Konzeption bis hin zur Umsetzung. Auch nach der Umsetzung stehen wir an Ihrer Seite und bieten Ihnen und Ihren Mitarbeitern maßgeschneiderten Support und Schulungen.
+      </p>
     </Whitebox>
     <Greybox>
       <h2>Individualsoftware vs. Standardsoftware</h2>
