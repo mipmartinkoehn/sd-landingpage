@@ -49,8 +49,13 @@ class ContactForm extends Component {
   render() {
     return (
       <div className="contact">
-      <form name="contact" method="post" data-netlify-recaptcha="true" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="bot-field" />
+        <form
+          name="contact"
+          method="POST"
+          action="/contact-success"
+          data-netlify-recaptcha="true"
+          onSubmit={this.handleSubmit}
+        >
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
